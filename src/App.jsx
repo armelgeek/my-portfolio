@@ -2,7 +2,6 @@ import { useState } from 'react'
 import 'react-slideshow-image/dist/styles.css';
 import { FaArrowRight, FaChevronRight, FaCircleArrowRight, FaCircleMinus, FaCircleXmark, FaClosedCaptioning, FaEye, FaFacebook, FaFantasyFlightGames, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa6";
 import './App.css'
-import bg1 from './assets/img/project1.png'
 import TiakaloMob from './components/projects/TiakaloMob';
 import TiakaloWeb from './components/projects/TiakaloWeb';
 import CmsChallenge from './components/projects/CmsChallenge';
@@ -97,12 +96,12 @@ function App() {
                 </div>
               </div>
               <div className='flex flex-row justify-start mt-10 gap-5'>
-                <img src="/html.png" width={48} height={48} />
-                <img src="/css.png" width={48} height={48} />
-                <img src="/symfony.png" width={48} height={48} />
-                <img src="/react-native.png" width={48} height={48} />
-                <img src="/nodejs.png" width={48} height={48} />
-                <img src="/mongodb.png" width={48} height={48} />
+                <img src="/my-portfolio/html.png" width={48} height={48} />
+                <img src="/my-portfolio/css.png" width={48} height={48} />
+                <img src="/my-portfolio/symfony.png" width={48} height={48} />
+                <img src="/my-portfolio/react-native.png" width={48} height={48} />
+                <img src="/my-portfolio/nodejs.png" width={48} height={48} />
+                <img src="/my-portfolio/mongodb.png" width={48} height={48} />
               </div>
             </div>
             <div className='w-[350px] border-2 rounded-2xl border-gray-300 img-profil'>
