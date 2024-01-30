@@ -138,7 +138,7 @@ function App() {
                   <div className="flex flex-row items-center gap-5 mt-2">
                     <a
                     target='_blank'
-                    href="http://youtube.com/watch?v"
+                    href="https://youtu.be/xJJHr3PiEu0"
                      style={{
                       fontFamily: "Karla",
                       fontWeight: "bold",
@@ -189,7 +189,7 @@ function App() {
                     }} className='flex flex-row gap-2 items-center'><FaChevronRight /> TailWind CSS</li>
                   </ul>
                   <div className="flex flex-row justify-center mb-5 lg:justify-start items-center gap-5 mt-2">
-                    <a href="http://" style={{
+                    <a href="https://youtu.be/XR6NRYSs5sE" style={{
                       fontFamily: "Karla",
                       fontWeight: "bold",
                     }} className='py-2 bg-purple-500  rounded-full text-white text-md px-5 bg-white-500 border-2 border-slate-300'>Video démo </a>
