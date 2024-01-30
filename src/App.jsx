@@ -83,7 +83,7 @@ function App() {
                 }}> Armel Wanes .</span></h3>
                 <h6 style={{
                   fontFamily: "Karla",
-                }}> Développeur full-stack avec plus de 3  ans d'expérience. Depuis lors, j'ai acquis une expertise dans un large éventail de technologies, notamment HTML, CSS, JavaScript, React pour le front-end, ainsi que Symfony, Node.js, Express.js, et MongoDB pour le back-end</h6>
+                }}> Développeur full-stack avec plus de 3  ans d'expérience. Depuis lors, j'ai acquis une expertise dans un large éventail de technologies, notamment HTML, CSS, JavaScript, React pour le front-end, ainsi que Symfony, Node.js et Express.js pour le back-end</h6>
 
                 <div className="flex mt-5 flex-row gap-5">
 
