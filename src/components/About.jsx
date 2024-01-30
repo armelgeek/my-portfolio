@@ -9,7 +9,9 @@ const About = () => {
             }}>
                 A Propos de moi
             </h3>
-
+            <div className="about-title">
+                
+            </div>
             <div className="flex flex-row gap-3 mt-3 h-96">
                 <div className="w-[600px]">
                     <p className='descr py-5'>

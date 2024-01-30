@@ -92,7 +92,7 @@ function App() {
                   <a style={{
                     fontFamily: "Karla",
                     fontWeight: "bold",
-                  }} href="" className='py-2 text-md px-5 rounded-full flex flex-row gap-2 items-center bg-white-500 border-2 border-purple-500'>Télécharger mon CV <FaCircleArrowRight className='text-purple-500' /></a>
+                  }} href="/my-portfolio/cv/Hajavololona-Armellin.docx" className='py-2 text-md px-5 rounded-full flex flex-row gap-2 items-center bg-white-500 border-2 border-purple-500'>Télécharger mon CV <FaCircleArrowRight className='text-purple-500' /></a>
                 </div>
               </div>
               <div className='flex flex-row justify-start mt-10 gap-5'>
@@ -177,7 +177,7 @@ function App() {
                     }} className='flex flex-row gap-2 items-center'><FaChevronRight />Express JS</li>
                     <li style={{
                       fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row gap-2 items-center'><FaChevronRight />MySql</li>
+                    }} className='flex flex-row gap-2 items-center'><FaChevronRight />MySQL</li>
 
                     <li style={{
                       fontFamily: 'Karla,sans-serif',
@@ -230,7 +230,7 @@ function App() {
                     }} className='flex flex-row gap-2 items-center'><FaChevronRight />Express JS</li>
                     <li style={{
                       fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row gap-2 items-center'><FaChevronRight />MySql</li>
+                    }} className='flex flex-row gap-2 items-center'><FaChevronRight />MySQL</li>
 
                     <li style={{
                       fontFamily: 'Karla,sans-serif',
@@ -277,7 +277,7 @@ function App() {
                     }} className='flex flex-row gap-2 items-center'><FaChevronRight />Express JS</li>
                     <li style={{
                       fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row gap-2 items-center'><FaChevronRight />MySql</li>
+                    }} className='flex flex-row gap-2 items-center'><FaChevronRight />MySQL</li>
 
                     <li style={{
                       fontFamily: 'Karla,sans-serif',
