@@ -139,7 +139,7 @@ function App() {
                   </ul>
                   <div className="flex flex-row items-center gap-5 mt-2">
                     <a
-                    targe='_blank'
+                    target='_blank'
                     href="http://youtube.com/watch?v"
                      style={{
                       fontFamily: "Karla",
