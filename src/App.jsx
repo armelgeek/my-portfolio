@@ -313,9 +313,9 @@ function App() {
 
                   <time className="font-medium text-purple-500" style={{
                     fontFamily: 'Karla'
-                  }}>09 Mars 2022 -  10 Septembre 2022</time>
+                  }}>05 Fevrie 2024 -  Maintenant</time>
                 </div>
-                <div className="font-bold text-slate-900 text-lg  mb-3">Developpeur FullStack chez Blue Cactus Factory</div>
+                <div className="font-bold text-slate-900 text-lg  mb-3">Developpeur FullStack JS chez Relia Consulting (en tant que Consultant)</div>
 
                 <div className="text-slate-500" style={{
                   fontFamily: 'Karla'
@@ -327,17 +327,8 @@ function App() {
 
                         </div>
                       </div>
-                      <p>Mis en  place d’une plateforme de cours en ligne nommé « Schoolathome »</p>
+                      <p>Mis en  place d’une application mobile nommé « PokerApply »</p>
                     </div>
-                    <div className="flex flex-row flex-wrap">
-                      <div>
-                        <div className="w-3 h-3 bg-purple-500 rounded-full mt-2 mr-3">
-
-                        </div>
-                      </div>
-                      <p >Conception et réalisation d’un site d’un hôtel française  nommé « Loup blanc »</p>
-                    </div>
-
                   </div>
                 </div>
               </div>
@@ -352,7 +343,7 @@ function App() {
                 <div className="flex items-center justify-end space-x-2 mb-1">
                   <time className="font-medium text-purple-500" style={{
                     fontFamily: 'Karla'
-                  }}>30 Octobre 2022 – Maintenant </time>
+                  }}>30 Octobre 2022 – 25 Janvier 2024 </time>
                 </div>
 
                 <div className="font-bold text-slate-900 text-lg mb-3" style={{
