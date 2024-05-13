@@ -374,7 +374,7 @@ function App() {
                     fontFamily: 'Karla'
                   }}>09 Mars 2022 -  10 Septembre 2022</time>
                 </div>
-                <div className="font-bold text-slate-900 text-lg  mb-3">Developpeur FullStack chez Blue Cactus Factory</div>
+                <div className="font-bold text-slate-900 text-lg  mb-3">Developpeur FullStack JS chez Blue Cactus Factory</div>
 
                 <div className="text-slate-500" style={{
                   fontFamily: 'Karla'
@@ -394,7 +394,7 @@ function App() {
 
                         </div>
                       </div>
-                      <p >Conception et réalisation d’un site d’un hôtel française  nommé « Loup blanc »</p>
+                      <p>Conception et réalisation d’un site de reservation d'hôtel  nommé « Loup blanc »</p>
                     </div>
 
                   </div>
