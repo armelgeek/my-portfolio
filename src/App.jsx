@@ -83,7 +83,7 @@ function App() {
                 }}> Armel Wanes .</span></h3>
                 <h6 style={{
                   fontFamily: "Karla",
-                }}> Développeur full-stack avec plus de 3  ans d'expérience. Depuis lors, j'ai acquis une expertise dans un large éventail de technologies, notamment HTML, CSS, JavaScript, React pour le front-end, ainsi que Symfony, Node.js et Express.js pour le back-end</h6>
+                }}> Développeur full-stack avec plus de 4  ans d'expérience. Depuis lors, j'ai acquis une expertise dans un large éventail de technologies, notamment HTML, CSS, JavaScript, React pour le front-end, ainsi que Symfony, Node.js et Express.js pour le back-end</h6>
 
                 <div className="flex mt-5 flex-row gap-5">
 
@@ -313,7 +313,7 @@ function App() {
 
                   <time className="font-medium text-purple-500" style={{
                     fontFamily: 'Karla'
-                  }}>05 Fevrie 2024 -  Maintenant</time>
+                  }}>05 Fevrier 2024 -  Maintenant</time>
                 </div>
                 <div className="font-bold text-slate-900 text-lg  mb-3">Developpeur FullStack JS chez Relia Consulting (en tant que Consultant)</div>
 
