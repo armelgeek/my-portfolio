@@ -6,6 +6,7 @@ import TiakaloMob from './components/projects/TiakaloMob';
 import TiakaloWeb from './components/projects/TiakaloWeb';
 import CmsChallenge from './components/projects/CmsChallenge';
 import Cbva from './components/projects/Cbva';
+import { CgSearch, CgSearchFound } from 'react-icons/cg';
 
 function App() {
   return (
@@ -83,7 +84,11 @@ function App() {
                 }}> Armel Wanes .</span></h3>
                 <h6 style={{
                   fontFamily: "Karla",
+<<<<<<< Updated upstream
                 }}> Développeur full-stack avec plus de 4  ans d'expérience. Depuis lors, j'ai acquis une expertise dans un large éventail de technologies, notamment HTML, CSS, JavaScript, React pour le front-end, ainsi que Symfony, Node.js et Express.js pour le back-end</h6>
+=======
+                }}> Développeur full-stack avec plus de 3 ans d'expérience. Depuis lors, j'ai acquis une expertise dans un large éventail de technologies, notamment HTML, CSS, JavaScript, React pour le front-end, ainsi que Symfony, Node.js et Express.js pour le back-end</h6>
+>>>>>>> Stashed changes
 
                 <div className="flex mt-5 flex-row gap-5">
 
@@ -97,6 +102,7 @@ function App() {
                 <img src="/my-portfolio/html.png" width={48} height={48} />
                 <img src="/my-portfolio/css.png" width={48} height={48} />
                 <img src="/my-portfolio/symfony.png" width={48} height={48} />
+                <img src="/my-portfolio/next.png" width={48} height={48} />
                 <img src="/my-portfolio/react-native.png" width={48} height={48} />
                 <img src="/my-portfolio/nodejs.png" width={48} height={48} />
                 <img src="/my-portfolio/mongodb.png" width={48} height={48} />
@@ -111,6 +117,115 @@ function App() {
           }}>
             Mes projets
           </h3>
+
+          <div className="flex flex-row mt-10 h-96">
+            <div className="flex flex-row gap-3">
+              <div className="w-full lg:w-[350px] p-3 shadow-sm border">
+                <div className="flex flex-col gap-4 h-full justify-center items-start">
+                  <h3 className='text-2xl font-bold' style={{
+                    fontFamily: 'Pacifico,sans-serif'
+                  }}>Kursus - Web</h3>
+                 
+                  <p className='text-lg' style={{
+                    fontFamily: 'Karla,sans-serif'
+                  }}> une plateforme en ligne dédiée à l'apprentissage et au développement des compétences.</p>
+                  <ul style={{
+                    fontFamily: 'Karla,sans-serif'
+                  }}>
+                    <li style={{
+                      fontFamily: 'Karla,sans-serif'
+                    }} className='flex flex-row gap-2 items-center'><FaChevronRight /> Next JS</li>
+                    <li style={{
+                      fontFamily: 'Karla,sans-serif'
+                    }} className='flex flex-row gap-2 items-center'><FaChevronRight />Shadcn UI</li>
+                    <li style={{
+                      fontFamily: 'Karla,sans-serif',
+                    }} className='flex flex-row gap-2 items-center'><FaChevronRight />Prisma ORM</li>
+                    
+                    <li style={{
+                      fontFamily: 'Karla,sans-serif',
+                    }} className='flex flex-row gap-2 items-center'><FaChevronRight />Stripe JS</li>
+                
+
+                    <li style={{
+                      fontFamily: 'Karla,sans-serif',
+                    }} className='flex flex-row gap-2 items-center'><FaChevronRight />Zustand</li>
+                
+                    <li style={{
+                      fontFamily: 'Karla,sans-serif',
+                    }} className='flex flex-row gap-2 items-center'><FaChevronRight /> TailWind CSS</li>
+                  </ul>
+                  <div className="flex flex-row items-center gap-5 mt-2">
+                    <a target='_blank' href="https://github.com/armelgeek/learning-academy" style={{
+                      fontFamily: "Karla",
+                      fontWeight: "bold",
+                    }} className='py-2 bg-white flex flex-row gap-2 rounded-full text-black text-md px-5 bg-white-500 border border-slate-300'> <FaGithub  size={22} /> Github </a>
+                   
+                  </div>
+                </div>
+              </div>
+              <div className="hidden  lg:block md:w-[650px] lg:[650px] bg-gray-100" >
+                 <div className='w-full h-full flex justify-center items-center'>
+                    <p className="text-gray-400 text-2xl" >Pas encore d'apercu</p>
+                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-row mt-10 h-96">
+            <div className="flex flex-row gap-3">
+              <div className="w-full lg:w-[350px] p-3 shadow-sm border">
+                <div className="flex flex-col gap-4 h-full justify-center items-start">
+                  <h3 className='text-2xl font-bold' style={{
+                    fontFamily: 'Pacifico,sans-serif'
+                  }}>Boutik - Web</h3>
+                 
+                  <p className='text-lg' style={{
+                    fontFamily: 'Karla,sans-serif'
+                  }}>Une plateforme de vente en ligne </p>
+                  <ul style={{
+                    fontFamily: 'Karla,sans-serif'
+                  }}>
+                    <li style={{
+                      fontFamily: 'Karla,sans-serif'
+                    }} className='flex flex-row gap-2 items-center'><FaChevronRight /> Next JS</li>
+                    <li style={{
+                      fontFamily: 'Karla,sans-serif'
+                    }} className='flex flex-row gap-2 items-center'><FaChevronRight />Shadcn UI</li>
+                    <li style={{
+                      fontFamily: 'Karla,sans-serif',
+                    }} className='flex flex-row gap-2 items-center'><FaChevronRight />Prisma ORM</li>
+                    
+                    <li style={{
+                      fontFamily: 'Karla,sans-serif',
+                    }} className='flex flex-row gap-2 items-center'><FaChevronRight />Stripe JS</li>
+                
+
+                    <li style={{
+                      fontFamily: 'Karla,sans-serif',
+                    }} className='flex flex-row gap-2 items-center'><FaChevronRight />Zustand</li>
+                
+                    <li style={{
+                      fontFamily: 'Karla,sans-serif',
+                    }} className='flex flex-row gap-2 items-center'><FaChevronRight /> TailWind CSS</li>
+                  </ul>
+                  <div className="flex flex-row items-center gap-5 mt-2">
+                    <a target='_blank' href="https://github.com/armelgeek/ecommerce-nextjs" style={{
+                      fontFamily: "Karla",
+                      fontWeight: "bold",
+                    }} className='py-2 bg-white flex flex-row gap-2 rounded-full text-black text-md px-5 bg-white-500 border border-slate-300'> <FaGithub  size={22} /> Github </a>
+                   
+                  </div>
+                </div>
+              </div>
+              <div className="hidden  lg:block md:w-[650px] lg:[650px] bg-gray-100" >
+                 <div className='w-full h-full flex justify-center items-center'>
+                    <p className="text-gray-400 text-2xl" >Pas encore d'apercu</p>
+                 </div>
+              </div>
+            </div>
+          </div>
+
           <div className="flex flex-row  gap-3 mt-10 h-96">
             <div className="flex flex-row gap-3">
               <div className="w-full lg:w-[350px] p-3 shadow-sm border">
@@ -207,9 +322,6 @@ function App() {
             <div className="flex flex-row gap-3">
               <div className="w-full lg:w-[350px] p-3 shadow-sm border">
                 <div className="flex flex-col gap-4 h-full justify-center items-start">
-                <small style={{
-                    fontFamily: 'Karla,sans-serif'
-                  }} className="text-xs bg-indigo-500 rounded-lg text-white px-3"> En cours de developpement</small>
                   <h3 className='text-2xl font-bold' style={{
                     fontFamily: 'Pacifico,sans-serif'
                   }}>CMS Challenge</h3>
@@ -313,9 +425,15 @@ function App() {
 
                   <time className="font-medium text-purple-500" style={{
                     fontFamily: 'Karla'
+<<<<<<< Updated upstream
                   }}>05 Fevrier 2024 -  Maintenant</time>
                 </div>
                 <div className="font-bold text-slate-900 text-lg  mb-3">Developpeur FullStack JS chez Relia Consulting (en tant que Consultant)</div>
+=======
+                  }}>09 Mars 2022 -  10 Septembre 2022</time>
+                </div>
+                <div className="font-bold text-slate-900 text-lg  mb-3">Developpeur FullStack chez Blue Cactus Factory</div>
+>>>>>>> Stashed changes
 
                 <div className="text-slate-500" style={{
                   fontFamily: 'Karla'
@@ -327,8 +445,22 @@ function App() {
 
                         </div>
                       </div>
+<<<<<<< Updated upstream
                       <p>Mis en  place d’une application mobile nommé « PokerApply »</p>
                     </div>
+=======
+                      <p>Mis en  place d’une plateforme de cours en ligne nommé « Schoolathome »</p>
+                    </div>
+                    <div className="flex flex-row flex-wrap">
+                      <div>
+                        <div className="w-3 h-3 bg-purple-500 rounded-full mt-2 mr-3">
+
+                        </div>
+                      </div>
+                      <p >Conception et réalisation d’un site d’un hôtel française  nommé « Loup blanc »</p>
+                    </div>
+
+>>>>>>> Stashed changes
                   </div>
                 </div>
               </div>
