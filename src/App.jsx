@@ -7,7 +7,12 @@ import TiakaloWeb from './components/projects/TiakaloWeb';
 import CmsChallenge from './components/projects/CmsChallenge';
 import Cbva from './components/projects/Cbva';
 import { CgSearch, CgSearchFound } from 'react-icons/cg';
-
+function calculateYearDifference() {
+  const currentYear = new Date().getFullYear();
+  const baseYear = 2020;
+  const difference = currentYear - baseYear;
+  return difference;
+}
 function App() {
   return (
     <div className='h-screen w-full'>
@@ -84,11 +89,7 @@ function App() {
                 }}> Armel Wanes .</span></h3>
                 <h6 style={{
                   fontFamily: "Karla",
-<<<<<<< Updated upstream
-                }}> Développeur full-stack avec plus de 4  ans d'expérience. Depuis lors, j'ai acquis une expertise dans un large éventail de technologies, notamment HTML, CSS, JavaScript, React pour le front-end, ainsi que Symfony, Node.js et Express.js pour le back-end</h6>
-=======
-                }}> Développeur full-stack avec plus de 3 ans d'expérience. Depuis lors, j'ai acquis une expertise dans un large éventail de technologies, notamment HTML, CSS, JavaScript, React pour le front-end, ainsi que Symfony, Node.js et Express.js pour le back-end</h6>
->>>>>>> Stashed changes
+                }}>  Développeur full-stack avec plus de {calculateYearDifference()} ans d'expérience. Depuis lors, j'ai acquis une expertise dans un large éventail de technologies, notamment HTML, CSS, JavaScript, React, Next pour le front-end, ainsi que Symfony, Node.js et Express.js pour le back-end</h6>
 
                 <div className="flex mt-5 flex-row gap-5">
 
@@ -425,15 +426,9 @@ function App() {
 
                   <time className="font-medium text-purple-500" style={{
                     fontFamily: 'Karla'
-<<<<<<< Updated upstream
-                  }}>05 Fevrier 2024 -  Maintenant</time>
+                  }}>05 Fevrier 2024 -  Maintenant</time>
                 </div>
                 <div className="font-bold text-slate-900 text-lg  mb-3">Developpeur FullStack JS chez Relia Consulting (en tant que Consultant)</div>
-=======
-                  }}>09 Mars 2022 -  10 Septembre 2022</time>
-                </div>
-                <div className="font-bold text-slate-900 text-lg  mb-3">Developpeur FullStack chez Blue Cactus Factory</div>
->>>>>>> Stashed changes
 
                 <div className="text-slate-500" style={{
                   fontFamily: 'Karla'
@@ -445,22 +440,8 @@ function App() {
 
                         </div>
                       </div>
-<<<<<<< Updated upstream
-                      <p>Mis en  place d’une application mobile nommé « PokerApply »</p>
+                      <p>Mis en place d’une application mobile nommé « PokerApply »</p>
                     </div>
-=======
-                      <p>Mis en  place d’une plateforme de cours en ligne nommé « Schoolathome »</p>
-                    </div>
-                    <div className="flex flex-row flex-wrap">
-                      <div>
-                        <div className="w-3 h-3 bg-purple-500 rounded-full mt-2 mr-3">
-
-                        </div>
-                      </div>
-                      <p >Conception et réalisation d’un site d’un hôtel française  nommé « Loup blanc »</p>
-                    </div>
-
->>>>>>> Stashed changes
                   </div>
                 </div>
               </div>
