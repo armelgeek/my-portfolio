@@ -456,7 +456,7 @@ function App() {
                 <div className="flex items-center justify-end space-x-2 mb-1">
                   <time className="font-medium text-purple-500" style={{
                     fontFamily: 'Karla'
-                  }}>30 Octobre 2022 – Aujourd'hui </time>
+                  }}>30 Octobre 2022 – Maintenant </time>
                 </div>
 
                 <div className="font-bold text-slate-900 text-lg mb-3" style={{
