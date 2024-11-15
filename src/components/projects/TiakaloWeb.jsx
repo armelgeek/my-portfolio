@@ -11,6 +11,8 @@ import tk8 from '../../assets/img/tiakalo-web/8.png'
 import tk9 from '../../assets/img/tiakalo-web/9.png'
 import tk10 from '../../assets/img/tiakalo-web/10.png'
 import tk11 from '../../assets/img/tiakalo-web/11.png'
+import tk12 from '../../assets/img/tiakalo-web/12.png'
+import tk13 from '../../assets/img/tiakalo-web/13.png'
 const TiakaloWeb = memo(() => {
     const responsiveSettings = [
         {
@@ -38,7 +40,7 @@ const TiakaloWeb = memo(() => {
                     backgroundRepeat: 'no-repeat'
                 }}></div>
             </div>
-           
+
             <div className="img">
                 <div className="h-96" style={{
                     backgroundImage: `url(${tk2})`,
@@ -119,7 +121,23 @@ const TiakaloWeb = memo(() => {
                     backgroundRepeat: 'no-repeat'
                 }}></div>
             </div>
-           
+            <div className="img">
+                <div className="h-96" style={{
+                    backgroundImage: `url(${tk12})`,
+                    backgroundPosition: 'center',
+                    backgroundSize: 'contain',
+                    backgroundRepeat: 'no-repeat'
+                }}></div>
+            </div>
+            <div className="img">
+                <div className="h-96" style={{
+                    backgroundImage: `url(${tk13})`,
+                    backgroundPosition: 'center',
+                    backgroundSize: 'contain',
+                    backgroundRepeat: 'no-repeat'
+                }}></div>
+            </div>
+
         </Slide>
     )
 })
