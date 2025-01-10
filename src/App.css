@@ -1,0 +1,50 @@
+.img-profil{
+    background-image: url('./assets/img/profil-img.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+    padding: 0px 10px;
+}
+
+.heading--underlined::after {
+    content: '';
+    display: block;
+    margin: 1rem 0 1rem;
+    height: 2px;
+    width: 5rem;
+    background: rgb(207, 91, 207);
+}
+.descr
+    {
+        color: rgb(252, 246, 244);
+        z-index: 3;
+        line-height: 1.5;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        font-size: calc(0.6rem + 1vw);
+        backdrop-filter: blur(4px);
+        top: 10rem;
+        font-family: "Ubuntu Mono", monospace;
+        font-style: italic;
+    }
+
+.about-title{
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    color: rgba(252, 246, 244, 0.1);
+    font-size: calc(5rem + 5vw);
+    z-index: 0;
+}
+.each-slide-effect > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+ 
+  }
+  
