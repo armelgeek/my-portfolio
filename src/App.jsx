@@ -157,7 +157,7 @@ function App() {
                     </li>
                     <li style={{
                       fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> Architecture basé sur l'Atomic Design & Function-First
+                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> Architecture basé sur l'Atomic Design
                     </li>
                   </ul>
                   <div className="flex flex-row gap-5">
