@@ -12,7 +12,7 @@ import PkBackend from './components/projects/PkBackend.jsx';
 import PerfectCV from './components/projects/PerfectCV.jsx';
 function calculateYearDifference() {
   const currentYear = new Date().getFullYear();
-  const baseYear = 2020;
+  const baseYear = 2021;
   const difference = currentYear - baseYear;
   return difference;
 }
@@ -249,9 +249,21 @@ function App() {
                     </li>
                     <li style={{
                       fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> Architecture basé sur l'Atomic Design & Function-First
+                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> Architecture basé sur l'Atomic Design
                     </li>
                   </ul>
+                  <div className="flex flex-row items-center gap-5 mt-2">
+                      <a
+                        target='_blank'
+                        href="https://youtu.be/VzE_-L6_nRk"
+                        style={{
+                          fontFamily: "Karla",
+                          fontWeight: "bold",
+                        }}
+                        className='flex flex-row items-center gap-2 px-5 py-2 text-white bg-purple-500 border-2 rounded-full text-md bg-white-500 border-slate-300'><FaEye/>Video
+                      démo </a>
+
+                  </div>
                 </div>
               </div>
               <div className="hidden lg:block md:w-[650px] lg:[650px] bg-gray-100">
@@ -446,7 +458,7 @@ function App() {
                   }}>
                     <li style={{
                       fontFamily: 'Karla,sans-serif'
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> React JS
+                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> React JS / Next JS
                     </li>
                     <li style={{
                       fontFamily: 'Karla,sans-serif'
@@ -469,6 +481,10 @@ function App() {
                     <li style={{
                       fontFamily: 'Karla,sans-serif',
                     }} className='flex flex-row items-center gap-2'><FaChevronRight/> TailWind CSS
+                    </li>
+                    <li style={{
+                      fontFamily: 'Karla,sans-serif',
+                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> ShadCn UI
                     </li>
                   </ul>
                   <div className="flex flex-row items-center justify-center gap-5 mt-2 mb-5 lg:justify-start">
@@ -586,6 +602,12 @@ function App() {
                     </li>
                   </ul>
                   <div className="flex flex-row items-center gap-5 mt-2">
+                  <a target='_blank' href="https://github.com/armelgeek/real-veto-react" style={{
+                      fontFamily: "Karla",
+                      fontWeight: "bold",
+                    }}
+                       className='flex flex-row gap-2 px-5 py-2 text-black bg-white border rounded-full text-md bg-white-500 border-slate-300'>
+                      <FaGithub size={22}/> Github </a>
 
                   </div>
                 </div>
