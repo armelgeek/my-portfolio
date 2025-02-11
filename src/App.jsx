@@ -478,6 +478,12 @@ function App() {
                     }}
                        className='px-5 py-2 text-white bg-purple-500 border-2 rounded-full text-md bg-white-500 border-slate-300'>Video
                       démo </a>
+                      <a target='_blank' href="https://github.com/armelgeek/tiakalo-next" style={{
+                      fontFamily: "Karla",
+                      fontWeight: "bold",
+                    }}
+                       className='flex flex-row gap-2 px-5 py-2 text-black bg-white border rounded-full text-md bg-white-500 border-slate-300'>
+                      <FaGithub size={22}/> Github </a>
 
                   </div>
                 </div>
