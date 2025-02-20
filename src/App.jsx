@@ -128,7 +128,68 @@ function App() {
             Mes projets
           </h3>
 
+<div className="flex flex-row mt-10 h-96">
+            <div className="flex flex-row gap-3">
+              <div className="w-full lg:w-[350px] p-3 shadow-sm border">
+                <div className="flex flex-col items-start justify-center h-full gap-4">
+                  <p className='text-purple-500'>En cours de développement</p>
+                  <h3 className='text-2xl font-bold' style={{
+                    fontFamily: 'Pacifico,sans-serif'
+                  }}>StayBliss - Web</h3>
+                 
+                  <p className='text-lg' style={{
+                    fontFamily: 'Karla,sans-serif'
+                  }}>Une plateforme dédiée à la réservation des chambres d'hôtel en ligne.</p>
+                  <ul style={{
+                    fontFamily: 'Karla,sans-serif'
+                  }}>
+                    <li style={{
+                      fontFamily: 'Karla,sans-serif'
+                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> Next JS
+                    </li>
+                    <li style={{
+                      fontFamily: 'Karla,sans-serif'
+                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Shadcn UI
+                    </li>
+                    <li style={{
+                      fontFamily: 'Karla,sans-serif',
+                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Drizzle ORM
+                    </li>
 
+                    <li style={{
+                      fontFamily: 'Karla,sans-serif',
+                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Stripe JS
+                    </li>
+
+
+                    <li style={{
+                      fontFamily: 'Karla,sans-serif',
+                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Zustand
+                    </li>
+
+                    <li style={{
+                      fontFamily: 'Karla,sans-serif',
+                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> TailWind CSS
+                    </li>
+                  </ul>
+                  <div className="flex flex-row items-center gap-5 mt-2">
+                    <a target='_blank' href="https://github.com/armelgeek/StayBliss" style={{
+                      fontFamily: "Karla",
+                      fontWeight: "bold",
+                    }}
+                       className='flex flex-row gap-2 px-5 py-2 text-black bg-white border rounded-full text-md bg-white-500 border-slate-300'>
+                      <FaGithub size={22}/> Github </a>
+
+                  </div>
+                </div>
+              </div>
+              <div className="hidden  lg:block md:w-[650px] lg:[650px] bg-gray-100">
+                <div className='flex items-center justify-center w-full h-full'>
+                  <p className="text-2xl text-gray-400">Pas encore d'apercu</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div className="flex flex-row mt-10 h-96">
             <div className="flex flex-row gap-3">
