@@ -1,5 +1,4 @@
 name: Deploy
-
 on:
   push:
     branches:
@@ -9,13 +8,15 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
 
       - name: Setup Node
         uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+          cache: 'npm'
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
@@ -33,7 +34,8 @@ jobs:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write  # Required for gh-pages deployment
     steps:
       - name: Download artifact
         uses: actions/download-artifact@v4
@@ -42,7 +44,7 @@ jobs:
           path: ./dist
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v3  # Changed from v4 to v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
