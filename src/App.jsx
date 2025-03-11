@@ -11,6 +11,7 @@ import Pk from "./components/projects/Pk.jsx";
 import PkBackend from './components/projects/PkBackend.jsx';
 import PerfectCV from './components/projects/PerfectCV.jsx';
 import LineUp from './components/projects/LineUp.jsx';
+import Boutik from './components/projects/Boutik.jsx';
 function calculateYearDifference() {
   const currentYear = new Date().getFullYear();
   const baseYear = 2021;
@@ -128,7 +129,7 @@ function App() {
             Mes projets
           </h3>
 
-<div className="flex flex-row mt-10 h-96">
+          <div className="flex flex-row mt-10 h-96">
             <div className="flex flex-row gap-3">
               <div className="w-full lg:w-[350px] p-3 shadow-sm border">
                 <div className="flex flex-col items-start justify-center h-full gap-4">
@@ -448,10 +449,10 @@ function App() {
                 </div>
               </div>
               <div className="hidden  lg:block md:w-[650px] lg:[650px] bg-gray-100">
-                <div className='flex items-center justify-center w-full h-full'>
-                  <p className="text-2xl text-gray-400">Pas encore d'apercu</p>
+                  <div className='flex items-center justify-center w-full h-full'>
+                      <p className="text-2xl text-gray-400">Pas encore d'apercu</p>
                 </div>
-              </div>
+                </div>
             </div>
           </div>
 
@@ -479,7 +480,7 @@ function App() {
                     </li>
                     <li style={{
                       fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Prisma ORM
+                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Drizzle ORM
                     </li>
 
                     <li style={{
@@ -499,7 +500,7 @@ function App() {
                     </li>
                   </ul>
                   <div className="flex flex-row items-center gap-5 mt-2">
-                    <a target='_blank' href="https://github.com/armelgeek/ecommerce-nextjs" style={{
+                    <a target='_blank' href="https://github.com/armelgeek/Boutik" style={{
                       fontFamily: "Karla",
                       fontWeight: "bold",
                     }}
@@ -510,9 +511,7 @@ function App() {
                 </div>
               </div>
               <div className="hidden  lg:block md:w-[650px] lg:[650px] bg-gray-100">
-                <div className='flex items-center justify-center w-full h-full'>
-                  <p className="text-2xl text-gray-400">Pas encore d'apercu</p>
-                </div>
+               <Boutik />
               </div>
             </div>
           </div>
