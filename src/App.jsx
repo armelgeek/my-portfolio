@@ -637,31 +637,37 @@ function App() {
                 <div className="flex flex-col items-start justify-center h-full gap-4">
                   <h3 className='text-2xl font-bold' style={{
                     fontFamily: 'Pacifico,sans-serif'
-                  }}>CMS Challenge</h3>
+                  }}>Windflow - Web</h3>
 
                   <p className='text-lg' style={{
                     fontFamily: 'Karla,sans-serif'
-                  }}>Un editeur Tailwind CSS, pour generer des pages facilement </p>
+                  }}>Un editeur Tailwind CSS, pour generer des pages facilement, exportable en html, css </p>
                   <ul style={{
                     fontFamily: 'Karla,sans-serif'
                   }}>
                     <li style={{
                       fontFamily: 'Karla,sans-serif'
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> React JS
+                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> Mext JS
                     </li>
                     <li style={{
                       fontFamily: 'Karla,sans-serif'
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Express JS
+                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Drizzle ORM
                     </li>
                     <li style={{
                       fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>MySQL
+                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>PostgreSQL
                     </li>
 
                     <li style={{
                       fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Redux
+                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Zustand
                     </li>
+
+                    <li style={{
+                      fontFamily: 'Karla,sans-serif',
+                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Shadcn UI
+                    </li>
+
 
                     <li style={{
                       fontFamily: 'Karla,sans-serif',
@@ -669,7 +675,7 @@ function App() {
                     </li>
                   </ul>
                   <div className="flex flex-row items-center gap-5 mt-2">
-                    <a target='_blank' href="https://github.com/armelgeek/cms-challenge" style={{
+                    <a target='_blank' href="https://github.com/armelgeek/windflow-next" style={{
                       fontFamily: "Karla",
                       fontWeight: "bold",
                     }}

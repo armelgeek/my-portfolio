@@ -1,4 +1,4 @@
-import React,{memo} from 'react'
+import React, { memo } from 'react'
 import { Slide } from 'react-slideshow-image';
 import tk1 from '../../assets/img/cms-challenge/1.png'
 import tk2 from '../../assets/img/cms-challenge/2.png'
@@ -9,6 +9,9 @@ import tk6 from '../../assets/img/cms-challenge/6.png'
 import tk7 from '../../assets/img/cms-challenge/7.png'
 import tk8 from '../../assets/img/cms-challenge/8.png'
 import tk9 from '../../assets/img/cms-challenge/9.png'
+import tk10 from '../../assets/img/cms-challenge/10.png'
+import tk11 from '../../assets/img/cms-challenge/11.png'
+import tk12 from '../../assets/img/cms-challenge/12.png'
 const CmsChallenge = memo(() => {
     const responsiveSettings = [
         {
@@ -36,7 +39,7 @@ const CmsChallenge = memo(() => {
                     backgroundRepeat: 'no-repeat'
                 }}></div>
             </div>
-           
+
             <div className="img">
                 <div className="h-96" style={{
                     backgroundImage: `url(${tk2})`,
@@ -100,6 +103,31 @@ const CmsChallenge = memo(() => {
                     backgroundSize: 'contain',
                     backgroundRepeat: 'no-repeat'
                 }}></div>
+            </div>
+            <div className="img">
+                <div className="h-96" style={{
+                    backgroundImage: `url(${tk10})`,
+                    backgroundPosition: 'center',
+                    backgroundSize: 'contain',
+                    backgroundRepeat: 'no-repeat'
+                }}></div>
+            </div>
+            <div className="img">
+                <div className="h-96" style={{
+                    backgroundImage: `url(${tk11})`,
+                    backgroundPosition: 'center',
+                    backgroundSize: 'contain',
+                    backgroundRepeat: 'no-repeat'
+                }}></div>
+            </div>
+            <div className="img">
+                <div className="h-96" style={{
+                    backgroundImage: `url(${tk12})`,
+                    backgroundPosition: 'center',
+                    backgroundSize: 'contain',
+                    backgroundRepeat: 'no-repeat'
+                }}></div>
+
             </div>
         </Slide>
     )
