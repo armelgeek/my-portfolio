@@ -12,6 +12,7 @@ import PkBackend from './components/projects/PkBackend.jsx';
 import PerfectCV from './components/projects/PerfectCV.jsx';
 import LineUp from './components/projects/LineUp.jsx';
 import Boutik from './components/projects/Boutik.jsx';
+import EBEPC from './components/projects/EBEPC.jsx';
 function calculateYearDifference() {
   const currentYear = new Date().getFullYear();
   const baseYear = 2021;
@@ -129,6 +130,38 @@ function App() {
             Mes projets
           </h3>
 
+          <div className="flex flex-row mt-10 h-96">
+            <div className="flex flex-row gap-3">
+              <div className="w-full lg:w-[350px] p-3 shadow-sm border">
+                <div className="flex flex-col items-start justify-center h-full gap-4">
+               
+                  <h3 className='text-2xl font-bold' style={{
+                    fontFamily: 'Pacifico,sans-serif'
+                  }}>E-BEPC - Mobile</h3>
+                 
+                  <p className='text-lg' style={{
+                    fontFamily: 'Karla,sans-serif'
+                  }}>Application pour les étudiants en 3ᵉ, pour s’entrainer avec des cours et des exercices.</p>
+                  <ul style={{
+                    fontFamily: 'Karla,sans-serif'
+                  }}>
+                    <li style={{
+                      fontFamily: 'Karla,sans-serif'
+                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>React Native
+                    </li>
+                    <li style={{
+                      fontFamily: 'Karla,sans-serif'
+                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Redux Toolkit
+                    </li>
+                  </ul>
+                 
+                </div>
+              </div>
+              <div className="hidden  lg:block md:w-[650px] lg:[650px] bg-gray-100">
+               <EBEPC/>
+              </div>
+            </div>
+          </div>
           <div className="flex flex-row mt-10 h-96">
             <div className="flex flex-row gap-3">
               <div className="w-full lg:w-[350px] p-3 shadow-sm border">
@@ -438,7 +471,7 @@ function App() {
                     </li>
                   </ul>
                   <div className="flex flex-row items-center gap-5 mt-2">
-                    <a target='_blank' href="https://github.com/armelgeek/learning-academy" style={{
+                    <a target='_blank' href="https://github.com/armelgeek/Kursus" style={{
                       fontFamily: "Karla",
                       fontWeight: "bold",
                     }}
@@ -675,6 +708,13 @@ function App() {
                     </li>
                   </ul>
                   <div className="flex flex-row items-center gap-5 mt-2">
+                  <a target='_blank' href="https://youtu.be/tgmF-vDSa-w" style={{
+                      fontFamily: "Karla",
+                      fontWeight: "bold",
+                    }}
+                       className='px-5 py-2 text-white bg-purple-500 border-2 rounded-full text-md bg-white-500 border-slate-300'>Video
+                      démo 
+                      </a>
                     <a target='_blank' href="https://github.com/armelgeek/windflow-next" style={{
                       fontFamily: "Karla",
                       fontWeight: "bold",
@@ -787,6 +827,14 @@ function App() {
                         </div>
                       </div>
                       <p>Mis en place d’une application mobile nommé « PokerApply »</p>
+                    </div>
+                    <div className="flex flex-row">
+                      <div>
+                        <div className="w-3 h-3 mt-2 mr-3 bg-purple-500 rounded-full">
+
+                        </div>
+                      </div>
+                      <p>Mis en place d’une application mobile nommé « EBEPC »</p>
                     </div>
                   </div>
                 </div>
