@@ -24,6 +24,7 @@ export const projectsData = [
     technologies: ['React JS / Next JS', 'Express JS', 'MySQL', 'Redux', 'Web Scrapping', 'TailWind CSS', 'ShadCn UI'],
     videoUrl: 'https://youtu.be/ZcnEaSl3KFo',
     githubUrl: 'https://github.com/armelgeek/tiakalo-next',
+    demoUrl: 'https://tiakalo.org',
     preview: {
       folder: 'tiakalo-web',
       imageCount: 16
