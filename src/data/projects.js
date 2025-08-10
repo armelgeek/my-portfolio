@@ -83,6 +83,24 @@ export const projectsData = [
       category: 'Backend'
     }
   },
+
+  {
+    id: 'windflow',
+    title: 'Windflow - Web',
+    description: 'Éditeur visuel Tailwind CSS pour création rapide de pages web avec exportation HTML/CSS et composants réutilisables.',
+    technologies: ['Next JS', 'Drizzle ORM', 'PostgreSQL', 'Zustand', 'Shadcn UI', 'TailWind CSS'],
+    videoUrl: 'https://youtu.be/tgmF-vDSa-w',
+    githubUrl: 'https://github.com/armelgeek/windflow-next',
+    preview: {
+      folder: 'cms-challenge',
+      imageCount: 12
+    },
+    theme: {
+      bgColor: 'bg-emerald-50',
+      accentColor: 'border-emerald-300',
+      category: 'Outils'
+    }
+  },
   {
     id: 'ebepc',
     title: 'EBEPC - Web',
@@ -125,23 +143,6 @@ export const projectsData = [
       bgColor: 'bg-indigo-50',
       accentColor: 'border-indigo-300',
       category: 'Education'
-    }
-  },
-  {
-    id: 'windflow',
-    title: 'Windflow - Web',
-    description: 'Éditeur visuel Tailwind CSS pour création rapide de pages web avec exportation HTML/CSS et composants réutilisables.',
-    technologies: ['Next JS', 'Drizzle ORM', 'PostgreSQL', 'Zustand', 'Shadcn UI', 'TailWind CSS'],
-    videoUrl: 'https://youtu.be/tgmF-vDSa-w',
-    githubUrl: 'https://github.com/armelgeek/windflow-next',
-    preview: {
-      folder: 'cms-challenge',
-      imageCount: 12
-    },
-    theme: {
-      bgColor: 'bg-emerald-50',
-      accentColor: 'border-emerald-300',
-      category: 'Outils'
     }
   },
   {
