@@ -26,7 +26,7 @@ export const projectsData = [
     githubUrl: 'https://github.com/armelgeek/tiakalo-next',
     preview: {
       folder: 'tiakalo-web',
-      imageCount: 13
+      imageCount: 16
     },
     theme: {
       bgColor: 'bg-cyan-50',
