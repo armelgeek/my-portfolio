@@ -69,22 +69,6 @@ export const projectsData = [
     }
   },
   {
-    id: 'poker-backend',
-    title: 'PokerApply - Backend',
-    description: 'API robuste pour application poker mobile avec gestion des parties multijoueurs, système de classement et architecture microservices.',
-    technologies: ['Node.js', 'TypeScript', 'Mongoose', 'MongoDB', 'Socket.io'],
-    preview: {
-      folder: 'pokerapp',
-      imageCount: 20
-    },
-    theme: {
-      bgColor: 'bg-purple-50',
-      accentColor: 'border-purple-300',
-      category: 'Backend'
-    }
-  },
-
-  {
     id: 'windflow',
     title: 'Windflow - Web',
     description: 'Éditeur visuel Tailwind CSS pour création rapide de pages web avec exportation HTML/CSS et composants réutilisables.',
