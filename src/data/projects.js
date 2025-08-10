@@ -38,7 +38,6 @@ export const projectsData = [
         description: 'Plateforme musicale web avec karaoké interactif, streaming audio et système de découverte automatique de contenu.',
         technologies: ['React JS / Next JS', 'Express JS', 'MySQL', 'Redux', 'Web Scrapping', 'TailWind CSS', 'ShadCn UI'],
         videoUrl: 'https://youtu.be/ZcnEaSl3KFo',
-        githubUrl: 'https://github.com/armelgeek/tiakalo-next',
         demoUrl: 'https://tiakalo.org',
         preview: {
             folder: 'tiakalo-web',
