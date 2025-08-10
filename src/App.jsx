@@ -72,9 +72,9 @@ function App() {
                 }}> Armel Wanes .</span></h3>
                 <h6 style={{
                   fontFamily: "Karla",
-                }}> Développeur full-stack avec plus de {calculateYearDifference()} ans d&apos;expérience. Depuis lors, j&apos;ai
-                  acquis une expertise dans un large éventail de technologies, notamment HTML, CSS, JavaScript, React,
-                  Next pour le front-end, ainsi que Symfony, Node.js et Express.js pour le back-end</h6>
+                }}> Développeur full-stack passionné avec plus de {calculateYearDifference()} ans d&apos;expérience dans la création d&apos;applications web et mobiles innovantes. 
+                  Expert en technologies modernes : HTML, CSS, JavaScript, React, Next.js pour le front-end, 
+                  ainsi que Symfony, Node.js et Express.js pour des solutions back-end robustes.</h6>
 
                 <div className="flex flex-row gap-5 mt-5">
                   <a style={{
@@ -106,7 +106,7 @@ function App() {
               style={{
                 fontFamily: "Pacifico,sans-serif"
               }}>
-            Experiences profesionnelles
+            Expériences professionnelles
           </h3>
           <div
               className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
@@ -128,7 +128,7 @@ function App() {
                   }}>05 Fevrier 2024 - Maintenant
                   </time>
                 </div>
-                <div className="mb-3 text-lg font-bold text-slate-900">Developpeur FullStack JS chez Relia Consulting
+                <div className="mb-3 text-lg font-bold text-slate-900">Développeur FullStack JS chez Relia Consulting
                   (en tant que Consultant)
                 </div>
                 <div className="text-slate-500" style={{
@@ -140,14 +140,22 @@ function App() {
                         <div className="w-3 h-3 mt-2 mr-3 bg-purple-500 rounded-full">
                         </div>
                       </div>
-                      <p>Mis en place d&apos;une application mobile nommé « PokerApply »</p>
+                      <p>Développement d&apos;une application mobile complète « PokerApply » avec fonctionnalités multijoueurs</p>
                     </div>
                     <div className="flex flex-row">
                       <div>
                         <div className="w-3 h-3 mt-2 mr-3 bg-purple-500 rounded-full">
                         </div>
                       </div>
-                      <p>Mis en place d&apos;une application mobile nommé « EBEPC »</p>
+                      <p>Création d&apos;une plateforme éducative « EBEPC » pour la préparation aux examens</p>
+                    </div>
+
+                    <div className="flex flex-row">
+                      <div>
+                        <div className="w-3 h-3 mt-2 mr-3 bg-purple-500 rounded-full">
+                        </div>
+                      </div>
+                      <p>Développement d&apos;une plateforme e-learning complète « MEKO ACADEMY » avec système de cours interactifs</p>
                     </div>
                   </div>
                 </div>
@@ -217,7 +225,7 @@ function App() {
                   }}>09 Mars 2022 - 10 Septembre 2022
                   </time>
                 </div>
-                <div className="mb-3 text-lg font-bold text-slate-900">Developpeur FullStack JS chez Blue Cactus
+                <div className="mb-3 text-lg font-bold text-slate-900">Développeur FullStack JS chez Blue Cactus
                   Factory
                 </div>
                 <div className="text-slate-500" style={{
@@ -229,14 +237,14 @@ function App() {
                         <div className="w-3 h-3 mt-2 mr-3 bg-purple-500 rounded-full">
                         </div>
                       </div>
-                      <p>Mis en place d&apos;une plateforme de cours en ligne nommé « Schoolathome »</p>
+                      <p>Développement d&apos;une plateforme de cours en ligne complète « Schoolathome »</p>
                     </div>
                     <div className="flex flex-row flex-wrap">
                       <div>
                         <div className="w-3 h-3 mt-2 mr-3 bg-purple-500 rounded-full">
                         </div>
                       </div>
-                      <p>Conception et réalisation d&apos;un site de reservation d&apos;hôtel nommé « Loup blanc »</p>
+                      <p>Conception et développement d&apos;un site de réservation d&apos;hôtel « Loup Blanc » avec système de booking</p>
                     </div>
                   </div>
                 </div>
@@ -260,8 +268,8 @@ function App() {
                   }}>03 Septembre 2021 - Décembre 2022
                   </time>
                 </div>
-                <div className="text-lg font-bold text-slate-900">Concepteur et Développeur pour Officine Veterinaire
-                  Ambalavao
+                <div className="text-lg font-bold text-slate-900">Concepteur et Développeur pour l&apos;Officine Vétérinaire
+                  d&apos;Ambalavao
                 </div>
                 <div className="text-slate-500" style={{
                   fontFamily: 'Karla'
@@ -271,8 +279,8 @@ function App() {
                       <div>
                         <div className="w-3 h-3 mt-2 mr-3 bg-purple-500 rounded-full"></div>
                       </div>
-                      <p>Concepteur et Réalisateur d&apos;un projet « Gestion de vente de médicament (VETO, PHYTO,Vaccin) et
-                        de stock du cabinet veterinaire Ambalavao »</p></div>
+                      <p>Conception et développement d&apos;un système de gestion complet pour la vente de médicaments (VETO, PHYTO, Vaccins) 
+                        et la gestion de stock du cabinet vétérinaire d&apos;Ambalavao</p></div>
                   </div>
                 </div>
               </div>
@@ -297,7 +305,7 @@ function App() {
                 </div>
                 <div className="text-lg font-bold text-slate-900" style={{
                   fontFamily: 'Karla'
-                }}>Chef de projet et développeur du projet « perle Rencontre »
+                }}>Chef de projet et développeur du projet « Perle Rencontre »
                 </div>
               </div>
             </div>

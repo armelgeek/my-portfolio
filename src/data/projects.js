@@ -1,43 +1,43 @@
 export const projectsData = [
+
   {
-    id: 'ebepc',
-    title: 'EBEPC',
-    description: "Creation d'un site e-commerce pour EBEPC avec gestion de stock, tableau de bord et systeme de commande en ligne",
-    status: 'EN LIGNE',
-    technologies: ['Symfony', 'MySQL', 'Bootstrap', 'JavaScript', 'Doctrine ORM'],
-    githubUrl: 'https://github.com/armellinesarl01',
-    demoUrl: 'https://ebepc.armellinhajavololona.me',
+    id: 'boutik',
+    title: 'Boutik - Web',
+    description: 'Solution e-commerce moderne avec gestion de catalogue, paiements sécurisés et interface d\'administration avancée.',
+    technologies: ['Next JS', 'Shadcn UI', 'Drizzle ORM', 'Stripe JS', 'Zustand', 'TailWind CSS'],
+    githubUrl: 'https://github.com/armelgeek/Boutik',
     preview: {
-      folder: 'ebepc',
-      imageCount: 10
+      folder: 'boutik',
+      imageCount: 15
     },
     theme: {
-      bgColor: 'bg-blue-50',
-      accentColor: 'border-blue-300',
+      bgColor: 'bg-pink-50',
+      accentColor: 'border-pink-300',
       category: 'E-commerce'
     }
   },
+
   {
-    id: 'lineup',
-    title: 'LineUp - Web',
-    description: 'Une application pour une societe qui permet de gerer les files d\'attentes de la societe',
-    technologies: ['Next JS', 'Drizzle ORM', 'Shadcn UI', 'Tailwind CSS'],
-    videoUrl: 'https://youtu.be/wVaxTElkR7I',
-    githubUrl: 'https://github.com/armelgeek/LineUp',
+    id: 'tiakalo-web',
+    title: 'Tiakalo - Web',
+    description: 'Plateforme musicale web avec karaoké interactif, streaming audio et système de découverte automatique de contenu.',
+    technologies: ['React JS / Next JS', 'Express JS', 'MySQL', 'Redux', 'Web Scrapping', 'TailWind CSS', 'ShadCn UI'],
+    videoUrl: 'https://youtu.be/ZcnEaSl3KFo',
+    githubUrl: 'https://github.com/armelgeek/tiakalo-next',
     preview: {
-      folder: 'lineup',
-      imageCount: 12
+      folder: 'tiakalo-web',
+      imageCount: 13
     },
     theme: {
-      bgColor: 'bg-green-50',
-      accentColor: 'border-green-300',
-      category: 'Gestion'
+      bgColor: 'bg-cyan-50',
+      accentColor: 'border-cyan-300',
+      category: 'Multimedia'
     }
   },
   {
     id: 'perfectcv',
     title: 'Perfect CV - Web',
-    description: 'Un outil de creation de CV en ligne.',
+    description: 'Générateur de CV professionnel avec templates modernes, exportation PDF et interface intuitive pour créer des CV percutants.',
     technologies: ['Next JS', 'Daisy UI', 'Tailwind CSS', 'Architecture basee sur l\'Atomic Design'],
     videoUrl: 'https://youtu.be/f8DypY1IOXM',
     githubUrl: 'https://github.com/armelgeek/cv-maker',
@@ -54,66 +54,53 @@ export const projectsData = [
   {
     id: 'poker-backend',
     title: 'PokerApply - Backend',
-    description: 'Le backend du reseau social dedie aux passionnes de poker.',
-    technologies: ['Express JS', 'Node JS', 'Neo4j', 'Clean Architecture'],
+    description: 'API robuste pour application poker mobile avec gestion des parties multijoueurs, système de classement et architecture microservices.',
+    technologies: ['Node.js', 'TypeScript', 'Mongoose', 'MongoDB', 'Socket.io'],
     preview: {
-      folder: 'pkb',
-      imageCount: 3
+      folder: 'pokerapp',
+      imageCount: 20
     },
     theme: {
-      bgColor: 'bg-red-50',
-      accentColor: 'border-red-300',
+      bgColor: 'bg-purple-50',
+      accentColor: 'border-purple-300',
       category: 'Backend'
     }
   },
   {
     id: 'poker-mobile',
     title: 'PokerApply - Mobile',
-    description: 'Un reseau social dedie aux joueurs de poker.',
-    technologies: ['React Native', 'Zustand', 'Architecture basee sur l\'Atomic Design'],
-    videoUrl: 'https://youtu.be/VzE_-L6_nRk',
+    description: 'Application mobile de poker en temps réel avec matchmaking automatique, chat intégré et interface utilisateur immersive.',
+    technologies: ['React Native', 'TypeScript', 'Redux Toolkit'],
     preview: {
       folder: 'pokerapp',
-      imageCount: 24
+      imageCount: 20
     },
     theme: {
-      bgColor: 'bg-yellow-50',
-      accentColor: 'border-yellow-300',
+      bgColor: 'bg-indigo-50',
+      accentColor: 'border-indigo-300',
       category: 'Mobile'
     }
   },
   {
-    id: 'kursus',
-    title: 'Kursus - Web',
-    description: 'Une plateforme en ligne dediee a l\'apprentissage et au developpement des competences.',
-    technologies: ['Next JS', 'Shadcn UI', 'Prisma ORM', 'Stripe JS', 'Zustand', 'TailWind CSS'],
-    githubUrl: 'https://github.com/armelgeek/Kursus',
-    theme: {
-      bgColor: 'bg-indigo-50',
-      accentColor: 'border-indigo-300',
-      category: 'Education'
-    }
-  },
-  {
-    id: 'boutik',
-    title: 'Boutik - Web',
-    description: 'Une plateforme de vente en ligne',
-    technologies: ['Next JS', 'Shadcn UI', 'Drizzle ORM', 'Stripe JS', 'Zustand', 'TailWind CSS'],
-    githubUrl: 'https://github.com/armelgeek/Boutik',
+    id: 'ebepc',
+    title: 'EBEPC - Web',
+    description: "Plateforme éducative dédiée à la préparation de l'examen BEPC avec cours interactifs, exercices pratiques et suivi de progression.",
+    status: 'EN LIGNE',
+    technologies: ['Symfony', 'MySQL', 'Bootstrap', 'JavaScript', 'Doctrine ORM'],
     preview: {
-      folder: 'boutik',
-      imageCount: 6
+      folder: 'ebepc',
+      imageCount: 10
     },
     theme: {
-      bgColor: 'bg-pink-50',
-      accentColor: 'border-pink-300',
-      category: 'E-commerce'
+      bgColor: 'bg-blue-50',
+      accentColor: 'border-blue-300',
+      category: 'Education'
     }
   },
   {
     id: 'tiakalo-mobile',
     title: 'Tiakalo - Mobile',
-    description: 'Application de musique avec du Karaoke et Lyric, marche en offline.',
+    description: 'Application musicale innovante avec karaoké intégré, mode hors-ligne et synchronisation des paroles en temps réel.',
     technologies: ['React Native', 'Redux', 'React Native Reanimated 2'],
     videoUrl: 'https://youtu.be/xJJHr3PiEu0',
     preview: {
@@ -127,26 +114,21 @@ export const projectsData = [
     }
   },
   {
-    id: 'tiakalo-web',
-    title: 'Tiakalo - Web',
-    description: 'Version web de l\'application de musique avec du karaoke et lyric\'s.',
-    technologies: ['React JS / Next JS', 'Express JS', 'MySQL', 'Redux', 'Web Scrapping', 'TailWind CSS', 'ShadCn UI'],
-    videoUrl: 'https://youtu.be/ZcnEaSl3KFo',
-    githubUrl: 'https://github.com/armelgeek/tiakalo-next',
-    preview: {
-      folder: 'tiakalo-web',
-      imageCount: 13
-    },
+    id: 'kursus',
+    title: 'Kursus - Web',
+    description: 'Plateforme d\'apprentissage en ligne complète avec système de cours interactifs, suivi de progression et certification professionnelle.',
+    technologies: ['Next JS', 'Shadcn UI', 'Prisma ORM', 'Stripe JS', 'Zustand', 'TailWind CSS'],
+    githubUrl: 'https://github.com/armelgeek/Kursus',
     theme: {
-      bgColor: 'bg-cyan-50',
-      accentColor: 'border-cyan-300',
-      category: 'Multimedia'
+      bgColor: 'bg-indigo-50',
+      accentColor: 'border-indigo-300',
+      category: 'Education'
     }
   },
   {
     id: 'windflow',
     title: 'Windflow - Web',
-    description: 'Un editeur Tailwind CSS, pour generer des pages facilement, exportable en html, css',
+    description: 'Éditeur visuel Tailwind CSS pour création rapide de pages web avec exportation HTML/CSS et composants réutilisables.',
     technologies: ['Next JS', 'Drizzle ORM', 'PostgreSQL', 'Zustand', 'Shadcn UI', 'TailWind CSS'],
     videoUrl: 'https://youtu.be/tgmF-vDSa-w',
     githubUrl: 'https://github.com/armelgeek/windflow-next',
@@ -161,9 +143,26 @@ export const projectsData = [
     }
   },
   {
+    id: 'lineup',
+    title: 'LineUp - Web',
+    description: 'Système de gestion de files d\'attente intelligent avec notifications en temps réel et tableau de bord analytique.',
+    technologies: ['Next JS', 'Drizzle ORM', 'Shadcn UI', 'Tailwind CSS'],
+    videoUrl: 'https://youtu.be/wVaxTElkR7I',
+    githubUrl: 'https://github.com/armelgeek/LineUp',
+    preview: {
+      folder: 'lineup',
+      imageCount: 12
+    },
+    theme: {
+      bgColor: 'bg-green-50',
+      accentColor: 'border-green-300',
+      category: 'Gestion'
+    }
+  },
+  {
     id: 'lcbv',
     title: 'LCBV Ambalavao',
-    description: 'Logiciel de gestion de vente et de stock medicament pour Officine Ambalavao',
+    description: 'Logiciel de gestion pharmaceutique complet avec inventaire automatisé, suivi des prescriptions et rapports réglementaires.',
     technologies: ['React JS', 'Express JS', 'MySQL', 'Redux', 'Bootstrap 4'],
     githubUrl: 'https://github.com/armelgeek/real-veto-react',
     preview: {
