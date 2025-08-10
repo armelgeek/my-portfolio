@@ -1,24 +1,14 @@
-import { useState } from 'react'
-import 'react-slideshow-image/dist/styles.css';
-import { FaArrowRight, FaChevronRight, FaCircleArrowRight, FaCircleMinus, FaCircleXmark, FaClosedCaptioning, FaEye, FaFacebook, FaFantasyFlightGames, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa6";
+import { FaArrowRight, FaCircleArrowRight, FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa6";
 import './App.css'
-import TiakaloMob from './components/projects/TiakaloMob';
-import TiakaloWeb from './components/projects/TiakaloWeb';
-import CmsChallenge from './components/projects/CmsChallenge';
-import Cbva from './components/projects/Cbva';
-import { CgSearch, CgSearchFound } from 'react-icons/cg';
-import Pk from "./components/projects/Pk.jsx";
-import PkBackend from './components/projects/PkBackend.jsx';
-import PerfectCV from './components/projects/PerfectCV.jsx';
-import LineUp from './components/projects/LineUp.jsx';
-import Boutik from './components/projects/Boutik.jsx';
-import EBEPC from './components/projects/EBEPC.jsx';
+import SimpleProjectsSection from "./components/SimpleProjectsSection";
+
 function calculateYearDifference() {
   const currentYear = new Date().getFullYear();
   const baseYear = 2021;
   const difference = currentYear - baseYear;
   return difference;
 }
+
 function App() {
   return (
     <div className='w-full h-screen'>
@@ -52,31 +42,18 @@ function App() {
               }} className={`text-2xl  font-semibold`} href="#mes-projets">Projets
               </a>
             </div>
-            <a target='_blank' href="https://github.com/armelgeek"><FaGithub size={28} /></a>
-            <a target='_blank' href="https://www.facebook.com/armel.mouhid"><FaFacebook size={28} /></a>
-            <a target='_blank' href="https://www.linkedin.com/in/armelwanes/"><FaLinkedin size={28} /></a>
+            <a target='_blank' href="https://github.com/armelgeek" rel="noopener noreferrer"><FaGithub size={28} /></a>
+            <a target='_blank' href="https://www.facebook.com/armel.mouhid" rel="noopener noreferrer"><FaFacebook size={28} /></a>
+            <a target='_blank' href="https://www.linkedin.com/in/armelwanes/" rel="noopener noreferrer"><FaLinkedin size={28} /></a>
             <div className='w-0.5 h-36 bg-black'></div>
           </div>
         </div>
-        {/** <div className="col-span-4 col-start-2 row-start-5">
-          <div className='flex flex-row items-end justify-center h-full gap-3 px-5'>
-            <div className='w-[650px] mr-8'>
-              <About />
-            </div>
-            <div className='w-[650px]'>
-              <div className='mb-3 cursor-pointer'>
-                <Skills/>
-              </div>
-            </div>
-          </div>
-          </div>**/}
         <div className="row-span-3 col-start-5 ml-[-25px] lg:ml-36 row-start-2">
           <div className='fixed bottom-0 flex flex-col items-center justify-start h-full gap-5 top-20'>
             <div className='w-0.5 h-36 bg-black'></div>
             <a className='mt-12 cursor-pointer' href="#mes-experiences"><h3 style={{
               fontFamily: "Karla",
             }} className='text-2xl rotate-[-90deg] font-semibold'>Experiences</h3></a>
-
           </div>
         </div>
         <div className="w-full h-full max-h-full col-span-3 col-start-2 row-span-3 row-start-2">
@@ -95,12 +72,11 @@ function App() {
                 }}> Armel Wanes .</span></h3>
                 <h6 style={{
                   fontFamily: "Karla",
-                }}> Développeur full-stack avec plus de {calculateYearDifference()} ans d'expérience. Depuis lors, j'ai
+                }}> Développeur full-stack avec plus de {calculateYearDifference()} ans d&apos;expérience. Depuis lors, j&apos;ai
                   acquis une expertise dans un large éventail de technologies, notamment HTML, CSS, JavaScript, React,
                   Next pour le front-end, ainsi que Symfony, Node.js et Express.js pour le back-end</h6>
 
                 <div className="flex flex-row gap-5 mt-5">
-
                   <a style={{
                     fontFamily: "Karla",
                     fontWeight: "bold",
@@ -111,679 +87,20 @@ function App() {
               </div>
               <div
                   className='flex flex-row flex-wrap items-center justify-center gap-5 mt-10 mb-6 lg:mb-0 lg:justify-start'>
-                <img src="/my-portfolio/html.png" width={48} height={48}/>
-                <img src="/my-portfolio/css.png" width={48} height={48}/>
-                <img src="/my-portfolio/symfony.png" width={48} height={48}/>
-                <img src="/my-portfolio/next.png" width={48} height={48}/>
-                <img src="/my-portfolio/react-native.png" width={48} height={48}/>
-                <img src="/my-portfolio/nodejs.png" width={48} height={48}/>
-                <img src="/my-portfolio/mongodb.png" width={48} height={48}/>
+                <img src="/my-portfolio/html.png" width={48} height={48} alt="HTML"/>
+                <img src="/my-portfolio/css.png" width={48} height={48} alt="CSS"/>
+                <img src="/my-portfolio/next.png" width={48} height={48} alt="Next.js"/>
+                <img src="/my-portfolio/react-native.png" width={48} height={48} alt="React Native"/>
+                <img src="/my-portfolio/nodejs.png" width={48} height={48} alt="Node.js"/>
+                <img src="/my-portfolio/mongodb.png" width={48} height={48} alt="MongoDB"/>
               </div>
             </div>
             <div className='w-full lg:w-[350px] border-2 rounded-2xl border-gray-300 img-profil'>
-
             </div>
           </div>
-          <h3 id="mes-projets" className="mt-20 text-3xl font-semibold text-purple-500 heading--underlined" style={{
-            fontFamily: "Pacifico,sans-serif"
-          }}>
-            Mes projets
-          </h3>
-
-          <div className="flex flex-row mt-10 h-96">
-            <div className="flex flex-row gap-3">
-              <div className="w-full lg:w-[350px] p-3 shadow-sm border">
-                <div className="flex flex-col items-start justify-center h-full gap-4">
-               
-                  <h3 className='text-2xl font-bold' style={{
-                    fontFamily: 'Pacifico,sans-serif'
-                  }}>E-BEPC - Mobile</h3>
-                 
-                  <p className='text-lg' style={{
-                    fontFamily: 'Karla,sans-serif'
-                  }}>Application pour les étudiants en 3ᵉ, pour s’entrainer avec des cours et des exercices.</p>
-                  <ul style={{
-                    fontFamily: 'Karla,sans-serif'
-                  }}>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif'
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>React Native
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif'
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Redux Toolkit
-                    </li>
-                  </ul>
-                 
-                </div>
-              </div>
-              <div className="hidden  lg:block md:w-[650px] lg:[650px] bg-gray-100">
-               <EBEPC/>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-row mt-10 h-96">
-            <div className="flex flex-row gap-3">
-              <div className="w-full lg:w-[350px] p-3 shadow-sm border">
-                <div className="flex flex-col items-start justify-center h-full gap-4">
-                  <p className='text-purple-500'>En cours de développement</p>
-                  <h3 className='text-2xl font-bold' style={{
-                    fontFamily: 'Pacifico,sans-serif'
-                  }}>StayBliss - Web</h3>
-                 
-                  <p className='text-lg' style={{
-                    fontFamily: 'Karla,sans-serif'
-                  }}>Une plateforme dédiée à la réservation des chambres d'hôtel en ligne.</p>
-                  <ul style={{
-                    fontFamily: 'Karla,sans-serif'
-                  }}>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif'
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> Next JS
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif'
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Shadcn UI
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Drizzle ORM
-                    </li>
-
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Stripe JS
-                    </li>
-
-
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Zustand
-                    </li>
-
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> TailWind CSS
-                    </li>
-                  </ul>
-                  <div className="flex flex-row items-center gap-5 mt-2">
-                    <a target='_blank' href="https://github.com/armelgeek/StayBliss" style={{
-                      fontFamily: "Karla",
-                      fontWeight: "bold",
-                    }}
-                       className='flex flex-row gap-2 px-5 py-2 text-black bg-white border rounded-full text-md bg-white-500 border-slate-300'>
-                      <FaGithub size={22}/> Github </a>
-
-                  </div>
-                </div>
-              </div>
-              <div className="hidden  lg:block md:w-[650px] lg:[650px] bg-gray-100">
-                <div className='flex items-center justify-center w-full h-full'>
-                  <p className="text-2xl text-gray-400">Pas encore d'apercu</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-row mt-10 h-96">
-            <div className="flex flex-row gap-3">
-              <div className="w-full lg:w-[350px] p-3 shadow-sm border">
-                <div className="flex flex-col items-start justify-center h-full gap-4">
-                  <h3 className='text-2xl font-bold' style={{
-                    fontFamily: 'Pacifico,sans-serif'
-                  }}>LineUp - Web</h3>
-
-                  <p className='text-lg' style={{
-                    fontFamily: 'Karla,sans-serif'
-                  }}>une application pour une société qui permet de gérer les files d'attentes de la société</p>
-                  <ul style={{
-                    fontFamily: 'Karla,sans-serif'
-                  }}>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif'
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> Next JS
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif'
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> Drizzle ORM
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif'
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> Shadcn UI
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Tailwind CSS
-                    </li>
-                  </ul>
-                  <div className="flex flex-row gap-5">
-                  <div className="flex flex-row items-center justify-center gap-5 mt-2 lg:justify-start">
-                    <a target='_blank' href="https://youtu.be/wVaxTElkR7I" style={{
-                      fontFamily: "Karla",
-                      fontWeight: "bold",
-                    }}
-                       className='px-5 py-2 text-white bg-purple-500 border-2 rounded-full text-md bg-white-500 border-slate-300'>Video
-                      démo </a>
-
-                  </div>
-
-                  <div className="flex flex-row items-center gap-5 mt-2">
-                    <a target='_blank' href="https://github.com/armelgeek/LineUp" style={{
-                      fontFamily: "Karla",
-                      fontWeight: "bold",
-                    }}
-                       className='flex flex-row gap-2 px-5 py-2 text-black bg-white border rounded-full text-md bg-white-500 border-slate-300'>
-                      <FaGithub size={22}/> Github </a>
-
-                  </div>
-                  </div>
-                </div>
-              </div>
-              <div className="hidden  lg:block md:w-[650px] lg:[650px] bg-gray-100">
-                <LineUp/>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-row mt-10 h-96">
-            <div className="flex flex-row gap-3">
-              <div className="w-full lg:w-[350px] p-3 shadow-sm border">
-                <div className="flex flex-col items-start justify-center h-full gap-4">
-                  <h3 className='text-2xl font-bold' style={{
-                    fontFamily: 'Pacifico,sans-serif'
-                  }}>Perfect CV - Web</h3>
-
-                  <p className='text-lg' style={{
-                    fontFamily: 'Karla,sans-serif'
-                  }}>Un outil de création de CV en ligne.</p>
-                  <ul style={{
-                    fontFamily: 'Karla,sans-serif'
-                  }}>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif'
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> Next JS
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif'
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> Daisy UI
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Tailwind CSS
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> Architecture basé sur l'Atomic Design
-                    </li>
-                  </ul>
-                  <div className="flex flex-row gap-5">
-                  <div className="flex flex-row items-center justify-center gap-5 mt-2 lg:justify-start">
-                    <a target='_blank' href="https://youtu.be/f8DypY1IOXM" style={{
-                      fontFamily: "Karla",
-                      fontWeight: "bold",
-                    }}
-                       className='px-5 py-2 text-white bg-purple-500 border-2 rounded-full text-md bg-white-500 border-slate-300'>Video
-                      démo </a>
-
-                  </div>
-
-                  <div className="flex flex-row items-center gap-5 mt-2">
-                    <a target='_blank' href="https://github.com/armelgeek/cv-maker" style={{
-                      fontFamily: "Karla",
-                      fontWeight: "bold",
-                    }}
-                       className='flex flex-row gap-2 px-5 py-2 text-black bg-white border rounded-full text-md bg-white-500 border-slate-300'>
-                      <FaGithub size={22}/> Github </a>
-
-                  </div>
-                  </div>
-                </div>
-              </div>
-              <div className="hidden  lg:block md:w-[650px] lg:[650px] bg-gray-100">
-                <PerfectCV/>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-row gap-3 mt-10 h-96">
-            <div className="flex flex-row gap-3">
-              <div className="w-full lg:w-[350px] p-3 shadow-sm border">
-                <div className="flex flex-col items-start justify-center h-full gap-4">
-                  <h3 className='text-2xl font-bold' style={{
-                    fontFamily: 'Pacifico,sans-serif'
-                  }}>PokerApply - Backend</h3>
-                  <p className='text-lg' style={{
-                    fontFamily: 'Karla,sans-serif'
-                  }}>Le backend du réseau social dédié aux passionnés de poker.</p>
-                  <ul style={{
-                    fontFamily: 'Karla,sans-serif'
-                  }}>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif'
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> Express JS
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif'
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Node JS
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> Neo4j
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> Clean Architecture
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="hidden lg:block md:w-[650px] lg:[650px] bg-gray-100">
-                <PkBackend/>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-row gap-3 mt-10 h-96">
-            <div className="flex flex-row gap-3">
-              <div className="w-full lg:w-[350px] p-3 shadow-sm border">
-                <div className="flex flex-col items-start justify-center h-full gap-4">
-                  <h3 className='text-2xl font-bold' style={{
-                    fontFamily: 'Pacifico,sans-serif'
-                  }}>PokerApply - Mobile</h3>
-                  <p className='text-lg' style={{
-                    fontFamily: 'Karla,sans-serif'
-                  }}>Un réseau social dédié aux joueurs de poker.</p>
-                  <ul style={{
-                    fontFamily: 'Karla,sans-serif'
-                  }}>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif'
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> React Native
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif'
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> Zustand
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> Architecture basé sur l'Atomic Design
-                    </li>
-                  </ul>
-                  <div className="flex flex-row items-center gap-5 mt-2">
-                      <a
-                        target='_blank'
-                        href="https://youtu.be/VzE_-L6_nRk"
-                        style={{
-                          fontFamily: "Karla",
-                          fontWeight: "bold",
-                        }}
-                        className='flex flex-row items-center gap-2 px-5 py-2 text-white bg-purple-500 border-2 rounded-full text-md bg-white-500 border-slate-300'><FaEye/>Video
-                      démo </a>
-
-                  </div>
-                </div>
-              </div>
-              <div className="hidden lg:block md:w-[650px] lg:[650px] bg-gray-100">
-                <Pk/>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-row mt-10 h-96">
-            <div className="flex flex-row gap-3">
-              <div className="w-full lg:w-[350px] p-3 shadow-sm border">
-                <div className="flex flex-col items-start justify-center h-full gap-4">
-                  <h3 className='text-2xl font-bold' style={{
-                    fontFamily: 'Pacifico,sans-serif'
-                  }}>Kursus - Web</h3>
-
-                  <p className='text-lg' style={{
-                    fontFamily: 'Karla,sans-serif'
-                  }}> une plateforme en ligne dédiée à l'apprentissage et au développement des compétences.</p>
-                  <ul style={{
-                    fontFamily: 'Karla,sans-serif'
-                  }}>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif'
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> Next JS
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif'
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Shadcn UI
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Prisma ORM
-                    </li>
-
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Stripe JS
-                    </li>
-
-
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Zustand
-                    </li>
-
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> TailWind CSS
-                    </li>
-                  </ul>
-                  <div className="flex flex-row items-center gap-5 mt-2">
-                    <a target='_blank' href="https://github.com/armelgeek/Kursus" style={{
-                      fontFamily: "Karla",
-                      fontWeight: "bold",
-                    }}
-                       className='flex flex-row gap-2 px-5 py-2 text-black bg-white border rounded-full text-md bg-white-500 border-slate-300'>
-                      <FaGithub size={22}/> Github </a>
-
-                  </div>
-                </div>
-              </div>
-              <div className="hidden  lg:block md:w-[650px] lg:[650px] bg-gray-100">
-                  <div className='flex items-center justify-center w-full h-full'>
-                      <p className="text-2xl text-gray-400">Pas encore d'apercu</p>
-                </div>
-                </div>
-            </div>
-          </div>
-
-          <div className="flex flex-row mt-10 h-96">
-            <div className="flex flex-row gap-3">
-              <div className="w-full lg:w-[350px] p-3 shadow-sm border">
-                <div className="flex flex-col items-start justify-center h-full gap-4">
-                  <h3 className='text-2xl font-bold' style={{
-                    fontFamily: 'Pacifico,sans-serif'
-                  }}>Boutik - Web</h3>
-
-                  <p className='text-lg' style={{
-                    fontFamily: 'Karla,sans-serif'
-                  }}>Une plateforme de vente en ligne </p>
-                  <ul style={{
-                    fontFamily: 'Karla,sans-serif'
-                  }}>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif'
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> Next JS
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif'
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Shadcn UI
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Drizzle ORM
-                    </li>
-
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Stripe JS
-                    </li>
-
-
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Zustand
-                    </li>
-
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> TailWind CSS
-                    </li>
-                  </ul>
-                  <div className="flex flex-row items-center gap-5 mt-2">
-                    <a target='_blank' href="https://github.com/armelgeek/Boutik" style={{
-                      fontFamily: "Karla",
-                      fontWeight: "bold",
-                    }}
-                       className='flex flex-row gap-2 px-5 py-2 text-black bg-white border rounded-full text-md bg-white-500 border-slate-300'>
-                      <FaGithub size={22}/> Github </a>
-
-                  </div>
-                </div>
-              </div>
-              <div className="hidden  lg:block md:w-[650px] lg:[650px] bg-gray-100">
-               <Boutik />
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-row gap-3 mt-10 h-96">
-            <div className="flex flex-row gap-3">
-              <div className="w-full lg:w-[350px] p-3 shadow-sm border">
-                <div className="flex flex-col items-start justify-center h-full gap-4">
-                  <h3 className='text-2xl font-bold' style={{
-                    fontFamily: 'Pacifico,sans-serif'
-                  }}>Tiakalo - Mobile</h3>
-
-                  <p className='text-lg' style={{
-                    fontFamily: 'Karla,sans-serif'
-                  }}>Application de musique avec du Karaoke et Lyric, marche en offline .</p>
-                  <ul style={{
-                    fontFamily: 'Karla,sans-serif'
-                  }}>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif'
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> React Native
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Redux
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>React Native Reanimated 2
-                    </li>
-                  </ul>
-                  <div className="flex flex-row items-center gap-5 mt-2">
-                    <a
-                        target='_blank'
-                        href="https://youtu.be/xJJHr3PiEu0"
-                        style={{
-                          fontFamily: "Karla",
-                          fontWeight: "bold",
-                        }}
-                        className='flex flex-row items-center gap-2 px-5 py-2 text-white bg-purple-500 border-2 rounded-full text-md bg-white-500 border-slate-300'><FaEye/>Video
-                      démo </a>
-
-
-                  </div>
-                </div>
-              </div>
-              <div className="hidden lg:block md:w-[650px] lg:[650px] bg-gray-100">
-                <TiakaloMob/>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-row gap-3 mt-10 h-96">
-            <div className="flex flex-row gap-3">
-              <div className="w-full lg:w-[350px] p-3 shadow-sm border">
-                <div className="flex flex-col items-start justify-center h-full gap-4">
-                  <h3 className='text-2xl font-bold' style={{
-                    fontFamily: 'Pacifico,sans-serif'
-                  }}>Tiakalo - Web</h3>
-                  <p className='text-lg' style={{
-                    fontFamily: 'Karla,sans-serif'
-                  }}>Version web de l'application de musique avec du karaoke et lyric's.</p>
-                  <ul style={{
-                    fontFamily: 'Karla,sans-serif'
-                  }}>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif'
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> React JS / Next JS
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif'
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Express JS
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>MySQL
-                    </li>
-
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Redux
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Web Scrapping
-                    </li>
-
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> TailWind CSS
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> ShadCn UI
-                    </li>
-                  </ul>
-                  <div className="flex flex-row items-center justify-center gap-5 mt-2 mb-5 lg:justify-start">
-                    <a target='_blank' href="https://youtu.be/ZcnEaSl3KFo" style={{
-                      fontFamily: "Karla",
-                      fontWeight: "bold",
-                    }}
-                       className='px-5 py-2 text-white bg-purple-500 border-2 rounded-full text-md bg-white-500 border-slate-300'>Video
-                      démo </a>
-                      <a target='_blank' href="https://github.com/armelgeek/tiakalo-next" style={{
-                      fontFamily: "Karla",
-                      fontWeight: "bold",
-                    }}
-                       className='flex flex-row gap-2 px-5 py-2 text-black bg-white border rounded-full text-md bg-white-500 border-slate-300'>
-                      <FaGithub size={22}/> Github </a>
-
-                  </div>
-                </div>
-              </div>
-              <div className="hidden lg:block md:w-[650px] lg:[650px] bg-gray-100">
-                <TiakaloWeb/>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-row mt-10 h-96">
-            <div className="flex flex-row gap-3">
-              <div className="w-full lg:w-[350px] p-3 shadow-sm border">
-                <div className="flex flex-col items-start justify-center h-full gap-4">
-                  <h3 className='text-2xl font-bold' style={{
-                    fontFamily: 'Pacifico,sans-serif'
-                  }}>Windflow - Web</h3>
-
-                  <p className='text-lg' style={{
-                    fontFamily: 'Karla,sans-serif'
-                  }}>Un editeur Tailwind CSS, pour generer des pages facilement, exportable en html, css </p>
-                  <ul style={{
-                    fontFamily: 'Karla,sans-serif'
-                  }}>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif'
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> Mext JS
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif'
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Drizzle ORM
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>PostgreSQL
-                    </li>
-
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Zustand
-                    </li>
-
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Shadcn UI
-                    </li>
-
-
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> TailWind CSS
-                    </li>
-                  </ul>
-                  <div className="flex flex-row items-center gap-5 mt-2">
-                  <a target='_blank' href="https://youtu.be/tgmF-vDSa-w" style={{
-                      fontFamily: "Karla",
-                      fontWeight: "bold",
-                    }}
-                       className='px-5 py-2 text-white bg-purple-500 border-2 rounded-full text-md bg-white-500 border-slate-300'>Video
-                      démo 
-                      </a>
-                    <a target='_blank' href="https://github.com/armelgeek/windflow-next" style={{
-                      fontFamily: "Karla",
-                      fontWeight: "bold",
-                    }}
-                       className='flex flex-row gap-2 px-5 py-2 text-black bg-white border rounded-full text-md bg-white-500 border-slate-300'>
-                      <FaGithub size={22}/> Github </a>
-
-                  </div>
-                </div>
-              </div>
-              <div className="hidden lg:block md:w-[650px] lg:[650px] bg-gray-100">
-                <CmsChallenge/>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-row gap-3 mt-10 h-96">
-            <div className="flex flex-row gap-3">
-              <div className="w-full lg:w-[350px] p-3 shadow-sm border">
-                <div className="flex flex-col items-start justify-center h-full gap-4">
-
-                  <h3 className='text-2xl font-bold' style={{
-                    fontFamily: 'Pacifico,sans-serif'
-                  }}>LCBV Ambalavao</h3>
-
-                  <p className='text-lg' style={{
-                    fontFamily: 'Karla,sans-serif'
-                  }}>Logiciel de gestion de vente et de stock medicament pour Officine Ambalavao </p>
-                  <ul style={{
-                    fontFamily: 'Karla,sans-serif'
-                  }}>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif'
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> React JS
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif'
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Express JS
-                    </li>
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>MySQL
-                    </li>
-
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/>Redux
-                    </li>
-
-                    <li style={{
-                      fontFamily: 'Karla,sans-serif',
-                    }} className='flex flex-row items-center gap-2'><FaChevronRight/> Bootstrap 4
-                    </li>
-                  </ul>
-                  <div className="flex flex-row items-center gap-5 mt-2">
-                  <a target='_blank' href="https://github.com/armelgeek/real-veto-react" style={{
-                      fontFamily: "Karla",
-                      fontWeight: "bold",
-                    }}
-                       className='flex flex-row gap-2 px-5 py-2 text-black bg-white border rounded-full text-md bg-white-500 border-slate-300'>
-                      <FaGithub size={22}/> Github </a>
-
-                  </div>
-                </div>
-              </div>
-              <div className="hidden lg:block md:w-[650px] lg:[650px] bg-gray-100">
-                <Cbva/>
-              </div>
-            </div>
-          </div>
+          
+          <SimpleProjectsSection />
+          
           <h3 id="mes-experiences"
               className="mt-20 text-3xl font-semibold text-center text-purple-500 heading--underlined lg:text-left"
               style={{
@@ -806,7 +123,6 @@ function App() {
               <div
                   className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
                 <div className="flex items-center justify-end mb-1 space-x-2">
-
                   <time className="font-medium text-purple-500" style={{
                     fontFamily: 'Karla'
                   }}>05 Fevrier 2024 - Maintenant
@@ -815,7 +131,6 @@ function App() {
                 <div className="mb-3 text-lg font-bold text-slate-900">Developpeur FullStack JS chez Relia Consulting
                   (en tant que Consultant)
                 </div>
-
                 <div className="text-slate-500" style={{
                   fontFamily: 'Karla'
                 }}>
@@ -823,18 +138,16 @@ function App() {
                     <div className="flex flex-row">
                       <div>
                         <div className="w-3 h-3 mt-2 mr-3 bg-purple-500 rounded-full">
-
                         </div>
                       </div>
-                      <p>Mis en place d’une application mobile nommé « PokerApply »</p>
+                      <p>Mis en place d&apos;une application mobile nommé « PokerApply »</p>
                     </div>
                     <div className="flex flex-row">
                       <div>
                         <div className="w-3 h-3 mt-2 mr-3 bg-purple-500 rounded-full">
-
                         </div>
                       </div>
-                      <p>Mis en place d’une application mobile nommé « EBEPC »</p>
+                      <p>Mis en place d&apos;une application mobile nommé « EBEPC »</p>
                     </div>
                   </div>
                 </div>
@@ -854,10 +167,9 @@ function App() {
                 <div className="flex items-center justify-end mb-1 space-x-2">
                   <time className="font-medium text-purple-500" style={{
                     fontFamily: 'Karla'
-                  }}>30 Octobre 2022 – Avril 2024
+                  }}>30 Octobre 2022 – Avril 2025
                   </time>
                 </div>
-
                 <div className="mb-3 text-lg font-bold text-slate-900" style={{
                   fontFamily: 'Karla'
                 }}>Développeur PHP chez Open Atlas (Full Remote)
@@ -876,7 +188,7 @@ function App() {
                       <div>
                         <div className="w-3 h-3 mt-2 mr-3 bg-purple-500 rounded-full"></div>
                       </div>
-                      <p> Implémentation de Matomo pour l'analyse d'audience et la collecte de données.</p></div>
+                      <p> Implémentation de Matomo pour l&apos;analyse d&apos;audience et la collecte de données.</p></div>
                     <div className="flex flex-row">
                       <div>
                         <div className="w-3 h-3 mt-2 mr-3 bg-purple-500 rounded-full"></div>
@@ -900,7 +212,6 @@ function App() {
               <div
                   className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
                 <div className="flex items-center justify-end mb-1 space-x-2">
-
                   <time className="font-medium text-purple-500" style={{
                     fontFamily: 'Karla'
                   }}>09 Mars 2022 - 10 Septembre 2022
@@ -909,7 +220,6 @@ function App() {
                 <div className="mb-3 text-lg font-bold text-slate-900">Developpeur FullStack JS chez Blue Cactus
                   Factory
                 </div>
-
                 <div className="text-slate-500" style={{
                   fontFamily: 'Karla'
                 }}>
@@ -917,20 +227,17 @@ function App() {
                     <div className="flex flex-row">
                       <div>
                         <div className="w-3 h-3 mt-2 mr-3 bg-purple-500 rounded-full">
-
                         </div>
                       </div>
-                      <p>Mis en place d’une plateforme de cours en ligne nommé « Schoolathome »</p>
+                      <p>Mis en place d&apos;une plateforme de cours en ligne nommé « Schoolathome »</p>
                     </div>
                     <div className="flex flex-row flex-wrap">
                       <div>
                         <div className="w-3 h-3 mt-2 mr-3 bg-purple-500 rounded-full">
-
                         </div>
                       </div>
-                      <p>Conception et réalisation d’un site de reservation d'hôtel nommé « Loup blanc »</p>
+                      <p>Conception et réalisation d&apos;un site de reservation d&apos;hôtel nommé « Loup blanc »</p>
                     </div>
-
                   </div>
                 </div>
               </div>
@@ -948,7 +255,6 @@ function App() {
               <div
                   className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
                 <div className="flex items-center justify-end mb-1 space-x-2">
-
                   <time className="font-medium text-purple-500" style={{
                     fontFamily: 'Karla'
                   }}>03 Septembre 2021 - Décembre 2022
@@ -965,7 +271,7 @@ function App() {
                       <div>
                         <div className="w-3 h-3 mt-2 mr-3 bg-purple-500 rounded-full"></div>
                       </div>
-                      <p>Concepteur et Réalisateur d’un projet « Gestion de vente de médicament (VETO, PHYTO,Vaccin) et
+                      <p>Concepteur et Réalisateur d&apos;un projet « Gestion de vente de médicament (VETO, PHYTO,Vaccin) et
                         de stock du cabinet veterinaire Ambalavao »</p></div>
                   </div>
                 </div>
@@ -974,7 +280,6 @@ function App() {
 
             <div
                 className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-
               <div
                   className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-purple-500 text-slate-500 group-[.is-active]:text-purple-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
                 <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="12" height="10">
@@ -1018,7 +323,6 @@ function App() {
                 }}>Participant au Startup weekend Covid-19 à Antananarivo avec le projet détection de cas contacts du
                   Covid-19(9ème place parmi les 35 projets)
                 </div>
-
               </div>
             </div>
             <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
@@ -1039,29 +343,23 @@ function App() {
                 </div>
                 <div className="text-lg font-bold text-slate-900" style={{
                   fontFamily: 'Karla'
-                }}>Première Place au concours Inter Universitaire HUI 2019 avec le projet Hitady avec l’équipe de Miray
+                }}>Première Place au concours Inter Universitaire HUI 2019 avec le projet Hitady avec l&apos;équipe de Miray
                   Geek
                 </div>
-
               </div>
             </div>
           </div>
 
-
           <footer className="m-4 bg-white">
             <div className="w-full max-w-screen-xl p-4 mx-auto md:py-8">
-
               <hr className="my-6 border-gray-200 sm:mx-autolg:my-8"/>
               <span className="block text-gray-900 text-md sm:text-center" style={{
                 fontFamily: 'Karla'
               }}>© 2023 <a href="https://www.linkedin.com/in/armelwanes/" className="hover:underline">Armel Wanes</a>. All Rights Reserved.</span>
             </div>
           </footer>
-
-
         </div>
       </div>
-
     </div>
   )
 }
