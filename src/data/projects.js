@@ -53,6 +53,22 @@ export const projectsData = [
     }
   },
   {
+    id: 'poker-mobile',
+    title: 'PokerApply - Mobile',
+    description: 'Application mobile de poker en temps réel avec matchmaking automatique, chat intégré et interface utilisateur immersive.',
+    technologies: ['React Native', 'TypeScript', 'Redux Toolkit'],
+    videoUrl: 'https://youtu.be/VzE_-L6_nRk',
+    preview: {
+      folder: 'pokerapp',
+      imageCount: 20
+    },
+    theme: {
+      bgColor: 'bg-indigo-50',
+      accentColor: 'border-indigo-300',
+      category: 'Mobile'
+    }
+  },
+  {
     id: 'poker-backend',
     title: 'PokerApply - Backend',
     description: 'API robuste pour application poker mobile avec gestion des parties multijoueurs, système de classement et architecture microservices.',
@@ -65,21 +81,6 @@ export const projectsData = [
       bgColor: 'bg-purple-50',
       accentColor: 'border-purple-300',
       category: 'Backend'
-    }
-  },
-  {
-    id: 'poker-mobile',
-    title: 'PokerApply - Mobile',
-    description: 'Application mobile de poker en temps réel avec matchmaking automatique, chat intégré et interface utilisateur immersive.',
-    technologies: ['React Native', 'TypeScript', 'Redux Toolkit'],
-    preview: {
-      folder: 'pokerapp',
-      imageCount: 20
-    },
-    theme: {
-      bgColor: 'bg-indigo-50',
-      accentColor: 'border-indigo-300',
-      category: 'Mobile'
     }
   },
   {
