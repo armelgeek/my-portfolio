@@ -3,7 +3,7 @@ export const projectsData = [
         id: 'meko-academy',
         title: 'Meko Academy - Web',
         description: "Avec Meko Academy, l'apprentissage des maths devient un jeu ! Grâce à une interface immersive et des défis interactifs, votre enfant progresse en addition, soustraction, multiplication et division tout en s'amusant.",
-        technologies: ['Hono JS', 'React JS', 'Drizzle ORM', 'PostgreSQL', 'Stripe JS', 'Shadcn UI', 'TailWind CSS'],
+        technologies: ['Hono JS', 'React JS', 'Drizzle ORM', 'PostgreSQL', 'Stripe', 'Shadcn UI', 'TailWind CSS'],
         videoUrl: 'https://youtu.be/tgmF-vDSa-w',
         githubUrl: 'https://github.com/armelgeek/windflow-next',
         preview: {
@@ -20,7 +20,7 @@ export const projectsData = [
         id: 'boutik',
         title: 'Boutik - Web',
         description: 'Solution e-commerce moderne avec gestion de catalogue, paiements sécurisés et interface d\'administration avancée.',
-        technologies: ['Next JS', 'Shadcn UI', 'Drizzle ORM', 'Stripe JS', 'Zustand', 'TailWind CSS'],
+        technologies: ['Next JS', 'Shadcn UI', 'Drizzle ORM', 'Stripe', 'Zustand', 'TailWind CSS'],
         githubUrl: 'https://github.com/armelgeek/Boutik',
         preview: {
             folder: 'boutik',
@@ -83,6 +83,23 @@ export const projectsData = [
         }
     },
     {
+        id: 'trevia-transport',
+        title: 'Trevia Transport - Web',
+        description: 'Système de gestion de transport avec suivi en temps réel, notifications et tableau de bord analytique.',
+        technologies: ['Hono JS', 'Next JS', 'Drizzle ORM', 'Stripe', 'Shadcn UI', 'Tailwind CSS'],
+        videoUrl: 'https://youtu.be/PbXrmJMNLLY',
+        githubUrl: 'https://github.com/armelgeek/trevia-frontend',
+        preview: {
+            folder: 'trevia-transport',
+            imageCount: 20
+        },
+        theme: {
+            bgColor: 'bg-indigo-50',
+            accentColor: 'border-indigo-300',
+            category: 'Mobile'
+        }
+    },
+    {
         id: 'windflow',
         title: 'Windflow - Web',
         description: 'Éditeur visuel Tailwind CSS pour création rapide de pages web avec exportation HTML/CSS et composants réutilisables.',
@@ -135,7 +152,7 @@ export const projectsData = [
         id: 'kursus',
         title: 'Kursus - Web',
         description: 'Plateforme d\'apprentissage en ligne complète avec système de cours interactifs, suivi de progression et certification professionnelle.',
-        technologies: ['Next JS', 'Shadcn UI', 'Prisma ORM', 'Stripe JS', 'Zustand', 'TailWind CSS'],
+        technologies: ['Next JS', 'Shadcn UI', 'Prisma ORM', 'Stripe', 'Zustand', 'TailWind CSS'],
         githubUrl: 'https://github.com/armelgeek/Kursus',
         theme: {
             bgColor: 'bg-indigo-50',
