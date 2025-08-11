@@ -21,6 +21,7 @@ export const projectsData = [
         title: 'Boutik - Web',
         description: 'Solution e-commerce moderne avec gestion de catalogue, paiements sécurisés et interface d\'administration avancée.',
         technologies: ['Next JS', 'Shadcn UI', 'Drizzle ORM', 'Stripe', 'Zustand', 'TailWind CSS'],
+        videoUrl: 'https://youtu.be/p3E37VHuVCk',
         githubUrl: 'https://github.com/armelgeek/Boutik',
         preview: {
             folder: 'boutik',
