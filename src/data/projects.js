@@ -51,6 +51,23 @@ export const projectsData = [
         }
     },
     {
+        id: 'trevia-transport',
+        title: 'Trevia Transport - Web',
+        description: 'Système de gestion de transport avec suivi en temps réel, notifications et tableau de bord analytique.',
+        technologies: ['Hono JS', 'Next JS', 'Drizzle ORM', 'Stripe', 'Shadcn UI', 'Tailwind CSS'],
+        videoUrl: 'https://youtu.be/PbXrmJMNLLY',
+        githubUrl: 'https://github.com/armelgeek/trevia-frontend',
+        preview: {
+            folder: 'trevia-transport',
+            imageCount: 20
+        },
+        theme: {
+            bgColor: 'bg-indigo-50',
+            accentColor: 'border-indigo-300',
+            category: 'Mobile'
+        }
+    },
+    {
         id: 'perfectcv',
         title: 'Perfect CV - Web',
         description: 'Générateur de CV professionnel avec templates modernes, exportation PDF et interface intuitive pour créer des CV percutants.',
@@ -75,23 +92,6 @@ export const projectsData = [
         videoUrl: 'https://youtu.be/VzE_-L6_nRk',
         preview: {
             folder: 'pokerapp',
-            imageCount: 20
-        },
-        theme: {
-            bgColor: 'bg-indigo-50',
-            accentColor: 'border-indigo-300',
-            category: 'Mobile'
-        }
-    },
-    {
-        id: 'trevia-transport',
-        title: 'Trevia Transport - Web',
-        description: 'Système de gestion de transport avec suivi en temps réel, notifications et tableau de bord analytique.',
-        technologies: ['Hono JS', 'Next JS', 'Drizzle ORM', 'Stripe', 'Shadcn UI', 'Tailwind CSS'],
-        videoUrl: 'https://youtu.be/PbXrmJMNLLY',
-        githubUrl: 'https://github.com/armelgeek/trevia-frontend',
-        preview: {
-            folder: 'trevia-transport',
             imageCount: 20
         },
         theme: {
