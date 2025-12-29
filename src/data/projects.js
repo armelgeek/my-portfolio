@@ -1,7 +1,7 @@
 export const projectsData = [
     {
         id: 'griboo',
-        tilte: 'Griboo (SASS)',
+        title: 'Griboo (SASS)',
         description: "Griboo est une plateforme de création d'animation whiteboard(tableau blanc) comme VideoScribe",
         technologies: ['Hono JS','Next JS', 'Drizzle ORM', 'Shadcn UI', 'Tailwind CSS', 'Better Auth', 'Open CV', 'Python'],
         theme: {
