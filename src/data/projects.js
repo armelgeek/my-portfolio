@@ -11,6 +11,18 @@ export const projectsData = [
         }
     },
     {
+      id: 'better-query',
+      title: 'Better Query',
+      description: 'A powerful, type-safe toolkit for building modern web applications',
+      technologies:  ['Javascript'],
+      githubUrl: 'https://armelgeek.github.io/better-query/',
+      theme: {
+            bgColor: 'bg-cyan-50',
+            accentColor: 'border-cyan-300',
+            category: 'Packages'
+      }
+    },
+    {
         id: 'meko-academy',
         title: 'Meko Academy - Web',
         description: "Avec Meko Academy, l'apprentissage des maths devient un jeu ! Grâce à une interface immersive et des défis interactifs, votre enfant progresse en addition, soustraction, multiplication et division tout en s'amusant.",
