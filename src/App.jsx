@@ -123,10 +123,7 @@ function App() {
               <div
                   className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
                 <div className="flex items-center justify-end mb-1 space-x-2">
-                  <time className="font-medium text-purple-500" style={{
-                    fontFamily: 'Karla'
-                  }}>05 Fevrier 2024 - Maintenant
-                  </time>
+                
                 </div>
                 <div className="mb-3 text-lg font-bold text-slate-900">Développeur FullStack JS chez Relia Consulting
                   (en tant que Consultant)
@@ -173,10 +170,7 @@ function App() {
               <div
                   className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
                 <div className="flex items-center justify-end mb-1 space-x-2">
-                  <time className="font-medium text-purple-500" style={{
-                    fontFamily: 'Karla'
-                  }}>30 Octobre 2022 – Avril 2025
-                  </time>
+              
                 </div>
                 <div className="mb-3 text-lg font-bold text-slate-900" style={{
                   fontFamily: 'Karla'
@@ -220,10 +214,7 @@ function App() {
               <div
                   className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
                 <div className="flex items-center justify-end mb-1 space-x-2">
-                  <time className="font-medium text-purple-500" style={{
-                    fontFamily: 'Karla'
-                  }}>09 Mars 2022 - 10 Septembre 2022
-                  </time>
+    
                 </div>
                 <div className="mb-3 text-lg font-bold text-slate-900">Développeur FullStack JS chez Blue Cactus
                   Factory
@@ -263,10 +254,7 @@ function App() {
               <div
                   className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
                 <div className="flex items-center justify-end mb-1 space-x-2">
-                  <time className="font-medium text-purple-500" style={{
-                    fontFamily: 'Karla'
-                  }}>03 Septembre 2021 - Décembre 2022
-                  </time>
+                
                 </div>
                 <div className="text-lg font-bold text-slate-900">Concepteur et Développeur pour l&apos;Officine Vétérinaire
                   d&apos;Ambalavao
@@ -298,10 +286,7 @@ function App() {
               <div
                   className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
                 <div className="flex items-center justify-end mb-1 space-x-2">
-                  <time className="font-medium text-purple-500" style={{
-                    fontFamily: 'Karla'
-                  }}>18 Novembre 2020 – 20 Mars 2021
-                  </time>
+                 
                 </div>
                 <div className="text-lg font-bold text-slate-900" style={{
                   fontFamily: 'Karla'
@@ -321,10 +306,7 @@ function App() {
               <div
                   className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
                 <div className="flex items-center justify-end mb-1 space-x-2">
-                  <time className="font-medium text-purple-500" style={{
-                    fontFamily: 'Karla'
-                  }}>23 Avril – 26 Avril 2020
-                  </time>
+                 
                 </div>
                 <div className="text-lg font-bold text-slate-900" style={{
                   fontFamily: 'Karla'
@@ -363,7 +345,7 @@ function App() {
               <hr className="my-6 border-gray-200 sm:mx-autolg:my-8"/>
               <span className="block text-gray-900 text-md sm:text-center" style={{
                 fontFamily: 'Karla'
-              }}>© 2023 <a href="https://www.linkedin.com/in/armelwanes/" className="hover:underline">Armel Wanes</a>. All Rights Reserved.</span>
+              }}>© 2025 <a href="https://www.linkedin.com/in/armelwanes/" className="hover:underline">Armel Wanes</a>. All Rights Reserved.</span>
             </div>
           </footer>
         </div>
