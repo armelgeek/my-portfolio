@@ -1,10 +1,20 @@
 export const projectsData = [
     {
+        id: 'griboo',
+        tilte: 'Griboo (SASS)',
+        description: "Griboo est une plateforme de création d'animation whiteboard(tableau blanc) comme VideoScribe",
+        technologies: ['Hono JS','Next JS', 'Drizzle ORM', 'Shadcn UI', 'Tailwind CSS', 'Better Auth', 'Open CV', 'Python'],
+        theme: {
+            bgColor: 'bg-indigo-50',
+            accentColor: 'border-indigo-300',
+            category: 'Video'
+        }
+    },
+    {
         id: 'meko-academy',
         title: 'Meko Academy - Web',
         description: "Avec Meko Academy, l'apprentissage des maths devient un jeu ! Grâce à une interface immersive et des défis interactifs, votre enfant progresse en addition, soustraction, multiplication et division tout en s'amusant.",
-        technologies: ['Hono JS', 'React JS', 'Drizzle ORM', 'PostgreSQL', 'Stripe', 'Shadcn UI', 'TailWind CSS'],
-        videoUrl: 'https://www.youtube.com/watch?v=ia1biL_HWyk',
+        technologies: ['Hono JS', 'React JS', 'Drizzle ORM', 'PostgreSQL', 'Stripe', 'Shadcn UI', 'TailWind CSS', 'Better Auth'],
         githubUrl: 'https://github.com/armelgeek/windflow-next',
         preview: {
             folder: 'meko-academy',
@@ -20,7 +30,7 @@ export const projectsData = [
         id: 'boutik',
         title: 'Boutik - Web',
         description: 'Solution e-commerce moderne avec gestion de catalogue, paiements sécurisés et interface d\'administration avancée.',
-        technologies: ['Next JS', 'Shadcn UI', 'Drizzle ORM', 'Stripe', 'Zustand', 'TailWind CSS'],
+        technologies: ['Next JS', 'Shadcn UI', 'Drizzle ORM', 'Stripe', 'Zustand', 'TailWind CSS', 'Better Auth'],
         videoUrl: 'https://youtu.be/p3E37VHuVCk',
         githubUrl: 'https://github.com/armelgeek/Boutik',
         preview: {
@@ -37,7 +47,7 @@ export const projectsData = [
         id: 'tiakalo-web',
         title: 'Tiakalo - Web',
         description: 'Plateforme musicale web avec karaoké interactif, streaming audio et système de découverte automatique de contenu.',
-        technologies: ['React JS / Next JS', 'Express JS', 'MySQL', 'Redux', 'Web Scrapping', 'TailWind CSS', 'ShadCn UI'],
+        technologies: ['React JS / Next JS', 'Express JS', 'MySQL', 'Redux', 'Web Scrapping', 'TailWind CSS', 'ShadCn UI', 'Auth JS'],
         videoUrl: 'https://youtu.be/Ww_7NsIt-Tc',
         demoUrl: 'https://tiakalo.org',
         preview: {
@@ -54,7 +64,7 @@ export const projectsData = [
         id: 'trevia-transport',
         title: 'Trevia Transport - Web',
         description: 'Système de gestion de transport avec suivi en temps réel, notifications et tableau de bord analytique.',
-        technologies: ['Hono JS', 'Next JS', 'Drizzle ORM', 'Stripe', 'Shadcn UI', 'Tailwind CSS'],
+        technologies: ['Hono JS', 'Next JS', 'Drizzle ORM', 'Stripe', 'Shadcn UI', 'Tailwind CSS', 'Better Auth'],
         videoUrl: 'https://youtu.be/PbXrmJMNLLY',
         githubUrl: 'https://github.com/armelgeek/trevia-frontend',
         preview: {
@@ -88,7 +98,7 @@ export const projectsData = [
         id: 'poker-mobile',
         title: 'PokerApply - Mobile',
         description: 'Application mobile de poker en temps réel avec matchmaking automatique, chat intégré et interface utilisateur immersive.',
-        technologies: ['React Native', 'TypeScript', 'Redux Toolkit'],
+        technologies: ['React Native', 'TypeScript', 'Redux Toolkit','JWT'],
         videoUrl: 'https://youtu.be/VzE_-L6_nRk',
         preview: {
             folder: 'pokerapp',
@@ -104,7 +114,7 @@ export const projectsData = [
         id: 'windflow',
         title: 'Windflow - Web',
         description: 'Éditeur visuel Tailwind CSS pour création rapide de pages web avec exportation HTML/CSS et composants réutilisables.',
-        technologies: ['Next JS', 'Drizzle ORM', 'PostgreSQL', 'Zustand', 'Shadcn UI', 'TailWind CSS'],
+        technologies: ['Next JS', 'Drizzle ORM', 'PostgreSQL', 'Zustand', 'Shadcn UI', 'TailWind CSS', 'Better Auth'],
         videoUrl: 'https://youtu.be/tgmF-vDSa-w',
         githubUrl: 'https://github.com/armelgeek/windflow-next',
         preview: {
