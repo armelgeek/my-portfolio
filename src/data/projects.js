@@ -27,7 +27,6 @@ export const projectsData = [
         title: 'Meko Academy - Web',
         description: "Avec Meko Academy, l'apprentissage des maths devient un jeu ! Grâce à une interface immersive et des défis interactifs, votre enfant progresse en addition, soustraction, multiplication et division tout en s'amusant.",
         technologies: ['Hono JS', 'React JS', 'Drizzle ORM', 'PostgreSQL', 'Stripe', 'Shadcn UI', 'TailWind CSS', 'Better Auth'],
-        githubUrl: 'https://github.com/armelgeek/windflow-next',
         preview: {
             folder: 'meko-academy',
             imageCount: 17
